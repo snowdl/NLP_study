@@ -7,7 +7,12 @@ This repository contains practice code covering essential spaCy features includi
 - Phrase Matching with PhraseMatcher
 - Custom pipeline components for sentence boundary detection and text splitting
 
-The examples demonstrate how to analyze text tokens, count POS tags and dependencies, create and add custom entities, and extend the spaCy pipeline with user-defined components.
+### 🧠 NLP Architectures and Models
+This notebook contains hands-on implementation of NLP model architectures such as:
+- Simple Seq2Seq chatbot with LSTM
+- Vectorization using tokenizer
+- Custom encoder-decoder setup with attention layers (to be added)
 
-Feel free to explore and adapt the code for your own NLP projects!
+Used for understanding practical deep learning NLP models.
+
 
