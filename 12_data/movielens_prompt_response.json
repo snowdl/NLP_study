@@ -1,0 +1,42 @@
+[
+  {
+    "prompt": "Can you recommend a good comedy movie?",
+    "response": "You might enjoy 'The Big Lebowski'. It's a classic comedy with a unique sense of humor."
+  },
+  {
+    "prompt": "Suggest a popular action movie.",
+    "response": "'Die Hard' is a must-watch action film packed with excitement."
+  },
+  {
+    "prompt": "What's a great romance movie to watch?",
+    "response": "Try watching 'Before Sunrise'. It's a beautiful romantic story."
+  },
+  {
+    "prompt": "Recommend a science fiction film.",
+    "response": "'The Matrix' is an iconic sci-fi movie that blends action and philosophy."
+  },
+  {
+    "prompt": "Any good animated movies?",
+    "response": "'Toy Story' is a fantastic animated film loved by all ages."
+  },
+  {
+    "prompt": "I'm looking for a thriller. Any suggestions?",
+    "response": "'Se7en' is a gripping thriller that will keep you on the edge of your seat."
+  },
+  {
+    "prompt": "Suggest a family-friendly movie.",
+    "response": "'Finding Nemo' is a heartwarming family movie that's fun for everyone."
+  },
+  {
+    "prompt": "What is a classic drama movie?",
+    "response": "'The Shawshank Redemption' is one of the most acclaimed drama films ever made."
+  },
+  {
+    "prompt": "Recommend a documentary film.",
+    "response": "'March of the Penguins' is a fascinating and beautifully shot documentary."
+  },
+  {
+    "prompt": "Any recommendations for a musical?",
+    "response": "'La La Land' is a modern musical with great music and visuals."
+  }
+]
