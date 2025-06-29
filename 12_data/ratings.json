@@ -1,0 +1,252 @@
+[
+  {
+    "userId": 156,
+    "movieId": 3167,
+    "rating": 3
+  },
+  {
+    "userId": 514,
+    "movieId": 1258,
+    "rating": 4
+  },
+  {
+    "userId": 32,
+    "movieId": 39,
+    "rating": 3
+  },
+  {
+    "userId": 305,
+    "movieId": 55276,
+    "rating": 5
+  },
+  {
+    "userId": 603,
+    "movieId": 2020,
+    "rating": 4
+  },
+  {
+    "userId": 325,
+    "movieId": 80,
+    "rating": 4
+  },
+  {
+    "userId": 68,
+    "movieId": 6953,
+    "rating": 2.5
+  },
+  {
+    "userId": 359,
+    "movieId": 541,
+    "rating": 1.5
+  },
+  {
+    "userId": 68,
+    "movieId": 1101,
+    "rating": 3.5
+  },
+  {
+    "userId": 440,
+    "movieId": 1199,
+    "rating": 4.5
+  },
+  {
+    "userId": 182,
+    "movieId": 5643,
+    "rating": 3
+  },
+  {
+    "userId": 561,
+    "movieId": 1278,
+    "rating": 3.5
+  },
+  {
+    "userId": 140,
+    "movieId": 2682,
+    "rating": 4
+  },
+  {
+    "userId": 116,
+    "movieId": 356,
+    "rating": 4
+  },
+  {
+    "userId": 432,
+    "movieId": 77866,
+    "rating": 4.5
+  },
+  {
+    "userId": 73,
+    "movieId": 8641,
+    "rating": 3.5
+  },
+  {
+    "userId": 391,
+    "movieId": 1179,
+    "rating": 4
+  },
+  {
+    "userId": 409,
+    "movieId": 3868,
+    "rating": 4
+  },
+  {
+    "userId": 416,
+    "movieId": 750,
+    "rating": 4.5
+  },
+  {
+    "userId": 525,
+    "movieId": 50872,
+    "rating": 3.5
+  },
+  {
+    "userId": 16,
+    "movieId": 204,
+    "rating": 2
+  },
+  {
+    "userId": 89,
+    "movieId": 42761,
+    "rating": 4.5
+  },
+  {
+    "userId": 125,
+    "movieId": 6952,
+    "rating": 3
+  },
+  {
+    "userId": 6,
+    "movieId": 587,
+    "rating": 5
+  },
+  {
+    "userId": 57,
+    "movieId": 2102,
+    "rating": 4
+  },
+  {
+    "userId": 448,
+    "movieId": 117590,
+    "rating": 2
+  },
+  {
+    "userId": 307,
+    "movieId": 6957,
+    "rating": 3.5
+  },
+  {
+    "userId": 542,
+    "movieId": 4816,
+    "rating": 1.5
+  },
+  {
+    "userId": 567,
+    "movieId": 1203,
+    "rating": 4.5
+  },
+  {
+    "userId": 288,
+    "movieId": 474,
+    "rating": 3
+  },
+  {
+    "userId": 183,
+    "movieId": 1408,
+    "rating": 4
+  },
+  {
+    "userId": 45,
+    "movieId": 2355,
+    "rating": 5
+  },
+  {
+    "userId": 601,
+    "movieId": 48394,
+    "rating": 4
+  },
+  {
+    "userId": 380,
+    "movieId": 111362,
+    "rating": 5
+  },
+  {
+    "userId": 325,
+    "movieId": 32,
+    "rating": 4
+  },
+  {
+    "userId": 337,
+    "movieId": 778,
+    "rating": 4
+  },
+  {
+    "userId": 111,
+    "movieId": 119155,
+    "rating": 3.5
+  },
+  {
+    "userId": 51,
+    "movieId": 177,
+    "rating": 4
+  },
+  {
+    "userId": 131,
+    "movieId": 31,
+    "rating": 3
+  },
+  {
+    "userId": 80,
+    "movieId": 2513,
+    "rating": 4
+  },
+  {
+    "userId": 599,
+    "movieId": 4351,
+    "rating": 3
+  },
+  {
+    "userId": 75,
+    "movieId": 1610,
+    "rating": 4
+  },
+  {
+    "userId": 312,
+    "movieId": 5065,
+    "rating": 3
+  },
+  {
+    "userId": 414,
+    "movieId": 3847,
+    "rating": 2
+  },
+  {
+    "userId": 354,
+    "movieId": 51662,
+    "rating": 3.5
+  },
+  {
+    "userId": 438,
+    "movieId": 6503,
+    "rating": 0.5
+  },
+  {
+    "userId": 42,
+    "movieId": 2987,
+    "rating": 4
+  },
+  {
+    "userId": 82,
+    "movieId": 5065,
+    "rating": 3
+  },
+  {
+    "userId": 509,
+    "movieId": 1588,
+    "rating": 3.5
+  },
+  {
+    "userId": 274,
+    "movieId": 26736,
+    "rating": 4.5
+  }
+]
