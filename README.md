@@ -74,3 +74,16 @@ venv\Scripts\activate     # Windows
 # Install dependencies
 pip install -r requirements.txt
 
+##  Data Location
+
+All datasets and data files are located in the `12_data/` folder.  
+All code and notebooks use **relative paths** (e.g., `./12_data/filename`).  
+ **Important:** Please run all code from the project **root directory** (`NLP_study/`).
+##  Notes
+
+This repository is intended for **study**, **practice**, and **portfolio building**.  
+Some materials are adapted from online courses for **educational purposes only**.  
+
+ Feel free to **fork**, **star**, or **contribute**!  
+ If you have questions or suggestions, please **open an issue** or **contact me**.
+
