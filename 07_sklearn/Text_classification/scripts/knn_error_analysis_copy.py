@@ -26,7 +26,7 @@ print(os.getcwd())
 # In[31]:
 
 
-df = pd.read_csv('../../../12_data/classified_data.csv', index_col=0)
+df = pd.read_csv('../../../12_data/classified_./12_data/data.csv', index_col=0)
 
 
 # In[32]:
