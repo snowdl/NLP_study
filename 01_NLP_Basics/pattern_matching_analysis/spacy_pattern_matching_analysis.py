@@ -156,7 +156,7 @@ matcher = PhraseMatcher(nlp.vocab)
 # In[23]:
 
 
-with open('/Users/jessicahong/Downloads/UPDATED_NLP_COURSE/TextFiles/reaganomics.txt', 'r', encoding='ISO-8859-1') as f:
+with open('./12_data/Downloads/UPDATED_NLP_COURSE/TextFiles/reaganomics.txt', 'r', encoding='ISO-8859-1') as f:
     doc3 = nlp(f.read())
 
 
