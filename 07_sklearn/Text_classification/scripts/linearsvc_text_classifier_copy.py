@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+ㅋ#!/usr/bin/env python
 # coding: utf-8
 
 # In[2]:
