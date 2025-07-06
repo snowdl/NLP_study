@@ -1,233 +1,102 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[26]:
-
-
+import os
 import pandas as pd
 import numpy as np
-
-
-# In[27]:
-
-
 import matplotlib.pyplot as plt
 import seaborn as sns
-get_ipython().run_line_magic('matplotlib', 'inline')
 
+# Check current working directory (for debugging relative paths)
+print("Current working directory:", os.getcwd())
 
-# In[30]:
+# === Load Data ===
+# Modify this path to the correct absolute or relative path of your dataset
+data_path = '../../../12_data/data.csv'
 
+try:
+    df = pd.read_csv(data_path, index_col=0)
+except FileNotFoundError:
+    raise FileNotFoundError(f"Data file not found at path: {data_path}")
 
-import os
-print(os.getcwd())
-
-
-# In[31]:
-
-
-df = pd.read_csv('../../../12_data/classified_./12_data/data.csv', index_col=0)
-
-
-# In[32]:
-
-
-df.head()
-
-
-# In[33]:
-
-
-#imports the StandardScaler class from Scikit-learn’s preprocessing module.
-#StandardScaler : Standardize the feature in the dataset 
+# === Feature Scaling ===
 from sklearn.preprocessing import StandardScaler
-
-
-# In[34]:
-
 
 scaler = StandardScaler()
 
+# Fit scaler on features (exclude target) and transform
+features = df.drop('TARGET CLASS', axis=1)
+scaled_features = scaler.fit_transform(features)
 
-# In[35]:
+# Create scaled features DataFrame
+df_feat = pd.DataFrame(scaled_features, columns=features.columns)
 
-
-#df.drop('TARGET CLASS', axis=1) -> Removes the column 'TARGET CLASS', which is the label, so only feature columns are used.
-#why not include 'Target class' -> the target variable (label) — not a feature.so it does not make sense and would leak label information
-
-scaler.fit(df.drop('TARGET CLASS', axis=1))
-
-
-# In[36]:
-
-
-scaled_features = scaler.transform(df.drop('TARGET CLASS', axis=1))
-
-
-# In[37]:
-
-
-scaled_features
-
-
-# In[38]:
-
-
-df.columns
-
-
-# In[39]:
-
-
-df_feat = pd.DataFrame(scaled_features, columns = df.columns[:-1])
-
-
-# In[40]:
-
-
-df_feat.head()
-
-
-# In[41]:
-
-
-# imports the train_test_split function from Scikit-learn’s model_selection module.
+# === Train-Test Split ===
 from sklearn.model_selection import train_test_split
 
-
-# In[42]:
-
-
-X =df_feat
+X = df_feat
 y = df['TARGET CLASS']
 
-#X_train, y__train --> 70% of the data → used to train the model
-#X_test, y_test -->30% of the data → used to evaluate the model
-#random_state=101 --->ensures that the split is reproducible — you'll get the same result every time you run it.
-
+# Split data: 70% train, 30% test, fixed random state for reproducibility
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=101)
 
-
-# In[43]:
-
-
-#imports the KNeighborsClassifier class from Scikit-learn’s neighbors module.
-
+# === Train KNN Classifier (k=1) ===
 from sklearn.neighbors import KNeighborsClassifier
-
-
-# In[44]:
-
-
-#creates a K-Nearest Neighbors classifier and sets the number of neighbors (k) to 1.
-#n_neighbors=1 ---> means the model will look at only the closest neighbor when making a prediction.
-
-
-knn = KNeighborsClassifier(n_neighbors=1)
-
-
-# In[45]:
-
-
-knn.fit(X_train, y_train)
-
-
-# In[46]:
-
-
-params = knn.get_params()
-
-
-# In[47]:
-
-
-print(params)
-
-
-# In[48]:
-
-
-pred = knn.predict(X_test)
-
-
-# In[49]:
-
-
-pred
-
-
-# In[50]:
-
-
 from sklearn.metrics import classification_report, confusion_matrix
 
-
-# In[51]:
-
-
-print(confusion_matrix(y_test,pred))
-print (classification_report(y_test, pred))
-
-
-# In[52]:
-
-
-#error_rate = [] -->Create an empty list to store the error rate for each value of k.
-#for i in range(1, 40):	Loop through different k values from 1 to 39.
-#knn = KNeighborsClassifier(n_neighbors=i) Create a KNN model with the current k value.
-#knn.fit(X_train, y_train) -->Train the model on the training data.
-#pred_i = knn.predict(X_test)	-->Predict the test labels using the current model.
-#np.mean(pred_i != y_test) -->Compute the proportion of incorrect predictions (error rate).
-#error_rate.append(...) -->	Add the current error rate to the list.
-
-error_rate = []   
-for i in range (1,40):
-
-    knn = KNeighborsClassifier(n_neighbors=i)
-    knn.fit(X_train, y_train)
-    pred_i = knn.predict(X_test)
-    error_rate.append(np.mean(pred_i != y_test))
-
-
-# In[53]:
-
-
-plt.figure(figsize=(10,6))  #Sets the size of the plot to 10 inches wide and 6 inches tall.
-
-#range(1,40)  : the x-axis (values of k)
-#error_rate   : the y-axis (corresponding error rates)
-
-plt. plot(range(1,40), error_rate, color='blue', linestyle = 'dashed', marker ='o', markerfacecolor = 'red', markersize=10)
-plt.title('Error rate V K value')
-plt.xlabel('K')
-plt.ylabel('Error rate')
-
-
-# In[54]:
-
-
-knn = KNeighborsClassifier(n_neighbors = 17)
+knn = KNeighborsClassifier(n_neighbors=1)
 knn.fit(X_train, y_train)
+
 pred = knn.predict(X_test)
 
-print(confusion_matrix(y_test,pred))
-print (classification_report(y_test, pred))
+print("Confusion Matrix for k=1:")
+print(confusion_matrix(y_test, pred))
+print("\nClassification Report for k=1:")
+print(classification_report(y_test, pred))
 
+# Visualize confusion matrix
+plt.figure(figsize=(6,5))
+sns.heatmap(confusion_matrix(y_test, pred), annot=True, fmt='d', cmap='Blues')
+plt.title('Confusion Matrix (k=1)')
+plt.xlabel('Predicted')
+plt.ylabel('Actual')
+plt.show()
 
-# In[ ]:
+# === Find Optimal K by Error Rate ===
+error_rate = []
 
+for k in range(1, 40):
+    knn_k = KNeighborsClassifier(n_neighbors=k)
+    knn_k.fit(X_train, y_train)
+    pred_k = knn_k.predict(X_test)
+    error_rate.append(np.mean(pred_k != y_test))
 
+# Plot Error Rate vs. K Value
+plt.figure(figsize=(10,6))
+plt.plot(range(1,40), error_rate, color='blue', linestyle='dashed', marker='o',
+         markerfacecolor='red', markersize=8)
+plt.title('Error Rate vs. K Value')
+plt.xlabel('K')
+plt.ylabel('Error Rate')
+plt.show()
 
+# === Retrain with Best K ===
+best_k = error_rate.index(min(error_rate)) + 1  # index 0-based
+print(f"Best K found: {best_k}")
 
+knn_best = KNeighborsClassifier(n_neighbors=best_k)
+knn_best.fit(X_train, y_train)
+pred_best = knn_best.predict(X_test)
 
-# In[ ]:
+print(f"\nConfusion Matrix for k={best_k}:")
+print(confusion_matrix(y_test, pred_best))
+print(f"\nClassification Report for k={best_k}:")
+print(classification_report(y_test, pred_best))
 
-
-
-
-
-# In[ ]:
-
-
-
-
+# Visualize confusion matrix for best k
+plt.figure(figsize=(6,5))
+sns.heatmap(confusion_matrix(y_test, pred_best), annot=True, fmt='d', cmap='Blues')
+plt.title(f'Confusion Matrix (k={best_k})')
+plt.xlabel('Predicted')
+plt.ylabel('Actual')
+plt.show()
