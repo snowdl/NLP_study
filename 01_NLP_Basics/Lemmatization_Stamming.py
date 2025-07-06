@@ -1,103 +1,50 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[13]:
-
-
-from nltk.stem import WordNetLemmatizer
-
-# Create an instance of the WordNetLemmatizer
-lemmatizer = WordNetLemmatizer()
-
-
-# A list of words we want to lemmatize
-words = ['policy', 'doing', 'organization', 'have', 'going', 'love', 'lives', 'fly', 'dies', 'watched', 'has', 'starting']
-
-print('Before lemmatization:',words)
-print('After lemmatization:',[lemmatizer.lemmatize(word) for word in words])
-
-
-# In[14]:
-
-
-lemmatizer.lemmatize('dies', 'v')
-
-
-# In[15]:
-
-
-lemmatizer.lemmatize('watched', 'v')
-
-
-# In[16]:
-
-
-lemmatizer.lemmatize('has', 'v')
-
-
-# In[22]:
-
+from utils import set_project_root
+set_project_root()
 
 import nltk
-nltk.download('punkt')
-nltk.download('punkt_tab')
-
-
-# In[23]:
-
-
-from nltk.stem import PorterStemmer
+from nltk.stem import WordNetLemmatizer, PorterStemmer, LancasterStemmer
 from nltk.tokenize import word_tokenize
 
-stemmer = PorterStemmer()
+# Download necessary NLTK resources (only need to run once)
+nltk.download('punkt')
 
+def lemmatize_words(words, pos='n'):
+    """Lemmatize a list of words with optional part of speech (default: noun)."""
+    lemmatizer = WordNetLemmatizer()
+    return [lemmatizer.lemmatize(word, pos=pos) for word in words]
 
-# In[24]:
+def stem_words(words, stemmer):
+    """Stem a list of words using the given stemmer instance."""
+    return [stemmer.stem(word) for word in words]
 
+def example_lemmatization():
+    words = ['policy', 'doing', 'organization', 'have', 'going', 'love', 'lives', 'fly', 'dies', 'watched', 'has', 'starting']
+    print('Before lemmatization:', words)
+    print('After lemmatization (noun):', lemmatize_words(words, pos='n'))
+    print('After lemmatization (verb):', lemmatize_words(words, pos='v'))
 
-sentence = "This was not the map we found in Billy Bones's chest, but an accurate copy, complete in all things--names and heights and soundings--with the single exception of the red crosses and the written notes."
-tokenized_sentence = word_tokenize(sentence)
+def example_stemming():
+    words = ['policy', 'doing', 'organization', 'have', 'going', 'love', 'lives', 'fly', 'dies', 'watched', 'has', 'starting']
+    porter_stemmer = PorterStemmer()
+    lancaster_stemmer = LancasterStemmer()
 
+    print('Before stemming:', words)
+    print('PorterStemmer:', stem_words(words, porter_stemmer))
+    print('LancasterStemmer:', stem_words(words, lancaster_stemmer))
 
-# In[25]:
+def example_tokenize_and_stem():
+    sentence = ("This was not the map we found in Billy Bones's chest, "
+                "but an accurate copy, complete in all things--names and heights and soundings--"
+                "with the single exception of the red crosses and the written notes.")
+    tokenized_sentence = word_tokenize(sentence)
+    porter_stemmer = PorterStemmer()
 
+    print('Tokenized sentence:', tokenized_sentence)
+    print('Stemmed sentence:', stem_words(tokenized_sentence, porter_stemmer))
 
-print('Stemmming before :', tokenized_sentence)
-print('Stemming after :',[stemmer.stem(word) for word in tokenized_sentence])
-
-
-# In[27]:
-
-
-words = ['formalize', 'allowance', 'electricical']
-
-print('Stemmming before :',words)
-print('Stemmming after:',[stemmer.stem(word) for word in words])
-
-
-# In[29]:
-
-
-#comparison btw PorterStemmer& LancasterStemmer
-
-
-# In[ ]:
-
-
-from nltk.stem import PorterStemmer
-from nltk.stem import LancasterStemmer  # 이 줄이 추가되어야 합니다
-
-porter_stemmer = PorterStemmer()
-lancaster_stemmer = LancasterStemmer()
-
-words = ['policy', 'doing', 'organization', 'have', 'going', 'love', 'lives', 'fly', 'dies', 'watched', 'has', 'starting']
-print('어간 추출 전 :', words)
-print('PorterStemmer:', [porter_stemmer.stem(w) for w in words])
-print('LancasterStemmer:', [lancaster_stemmer.stem(w) for w in words])
-
-
-# In[ ]:
-
-
-
-
+if __name__ == "__main__":
+    example_lemmatization()
+    print()
+    example_stemming()
+    print()
+    example_tokenize_and_stem()
