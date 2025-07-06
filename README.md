@@ -11,9 +11,34 @@ The materials come from online lectures (Coursera, Udemy, K-MOOC, etc.) and incl
 -  Systematically organize concepts and code from NLP/LLM courses  
 -  Practice key techniques from scratch using Python  
 -  Build a clean, traceable portfolio for NLP/AI graduate program applications  
--  Serve as a long-term learning and revision hub  
+-  Serve as a long-term learning and revision hub
 
 ---
+## :package: Tech Stack & Tools
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python)](https://www.python.org)  
+[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=Jupyter)](https://jupyter.org)  
+[![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy)](https://numpy.org)  
+[![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas)](https://pandas.pydata.org)  
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=matplotlib)](https://matplotlib.org)  
+[![Seaborn](https://img.shields.io/badge/Seaborn-76B900?style=flat-square)](https://seaborn.pydata.org)  
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)  
+[![spaCy](https://img.shields.io/badge/spaCy-09A3D5?style=flat-square)](https://spacy.io)  
+[![HuggingFace](https://img.shields.io/badge/Hugging%20Face-FFD21F?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co)  
+[![Shell](https://img.shields.io/badge/Shell-FFD500?style=flat-square&logo=gnu-bash)](https://www.gnu.org/software/bash)
+
+---
+##  Scripts
+
+| File | Purpose |
+|------|---------|
+| `02_organize.sh` | Shell script for batch-renaming files/folders with numbering |
+| `03_readme.md` | Early version of README or subnotes |
+
+---
+
+
+
 
 ## :file_folder: Folder Overview
 
@@ -32,6 +57,24 @@ The materials come from online lectures (Coursera, Udemy, K-MOOC, etc.) and incl
 | `11_certificates` | Course completion screenshots / PDFs |
 | `12_data` | All datasets and data files used in this project |
 | `13_NLTK` | NLTK experiments (tokenization, POS tagging, etc.) |
+
+
+---
+##  Data Location
+
+All datasets and data files are located in the `12_data/` folder.  
+All code and notebooks use **relative paths** (e.g., `./12_data/filename`).  
+ **Important:** Please run all code from the project **root directory** (`NLP_study/`).
+##  Notes
+
+This repository is intended for **study**, **practice**, and **portfolio building**.  
+Some materials are adapted from online courses for **educational purposes only**.  
+
+ Feel free to **fork**, **star**, or **contribute**!  
+ If you have questions or suggestions, please **open an issue** or **contact me**.
+
+
+---
 
 ## Folder Structure
 
@@ -75,35 +118,7 @@ NLP_study/
 ├── 12_data/                        # Datasets used across the projects
 └── 13_NLTK/                        # Experiments using the NLTK library
 
-
-
-
 ---
-
-##  Scripts
-
-| File | Purpose |
-|------|---------|
-| `02_organize.sh` | Shell script for batch-renaming files/folders with numbering |
-| `03_readme.md` | Early version of README or subnotes |
-
----
-
-## :package: Tech Stack & Tools
-
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python)](https://www.python.org)  
-[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=Jupyter)](https://jupyter.org)  
-[![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy)](https://numpy.org)  
-[![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas)](https://pandas.pydata.org)  
-[![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=matplotlib)](https://matplotlib.org)  
-[![Seaborn](https://img.shields.io/badge/Seaborn-76B900?style=flat-square)](https://seaborn.pydata.org)  
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)  
-[![spaCy](https://img.shields.io/badge/spaCy-09A3D5?style=flat-square)](https://spacy.io)  
-[![HuggingFace](https://img.shields.io/badge/Hugging%20Face-FFD21F?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co)  
-[![Shell](https://img.shields.io/badge/Shell-FFD500?style=flat-square&logo=gnu-bash)](https://www.gnu.org/software/bash)
-
----
-
 ## :bulb: Usage
 
 ```bash
@@ -119,16 +134,4 @@ venv\Scripts\activate     # Windows
 # Install dependencies
 pip install -r requirements.txt
 
-##  Data Location
-
-All datasets and data files are located in the `12_data/` folder.  
-All code and notebooks use **relative paths** (e.g., `./12_data/filename`).  
- **Important:** Please run all code from the project **root directory** (`NLP_study/`).
-##  Notes
-
-This repository is intended for **study**, **practice**, and **portfolio building**.  
-Some materials are adapted from online courses for **educational purposes only**.  
-
- Feel free to **fork**, **star**, or **contribute**!  
- If you have questions or suggestions, please **open an issue** or **contact me**.
 
