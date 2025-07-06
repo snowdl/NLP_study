@@ -33,6 +33,51 @@ The materials come from online lectures (Coursera, Udemy, K-MOOC, etc.) and incl
 | `12_data` | All datasets and data files used in this project |
 | `13_NLTK` | NLTK experiments (tokenization, POS tagging, etc.) |
 
+## Folder Structure
+
+<details>
+<summary>Click to expand 📁</summary>
+
+```markdown
+NLP_study/
+├── 01_NLP_Basics/                      # Foundational NLP concepts and preprocessing
+│   ├── Lemmatization_Stemming/        # Word normalization techniques
+│   ├── pattern_matching_analysis/     # Rule-based pattern matching with spaCy
+│   ├── spacy_text_classification/     # Text classification using spaCy pipelines
+│   └── vector_semantics/              # Word vector arithmetic and similarity
+├── 02_NLP_Concepts/                   # Core theoretical concepts in NLP
+├── 03_nlp_architectures/             # NLP model architectures and custom implementations
+├── 04_llm_related/                    # Projects and experiments with Large Language Models
+│   ├── applications/                  # Real-world LLM applications and agents
+│   └── embeddings/                    # Embedding generation and vector analysis
+├── 05_Data_Visualization/            # Plotting and visualization tools
+│   ├── Plotly/                        # Interactive plots with Plotly
+│   └── Seaborn/                       # Statistical visualization with Seaborn
+├── 06_Pandas_Numpy/                  # Data manipulation and analysis with Pandas & Numpy
+├── 07_sklearn/                       # Machine Learning using Scikit-learn
+│   ├── KNN/                           # K-Nearest Neighbors classifier
+│   ├── RandomForest_Analysis/        # Random Forest implementation and analysis
+│   ├── Text_classification/          # Text classification using various models
+│   │   ├── notebooks/                # Jupyter Notebooks for experimentation
+│   │   └── scripts/                  # Clean Python scripts
+│   ├── Topic_Modeling/               # Topic modeling with NLP techniques
+│   └── linear_regression/            # Linear regression model and metrics
+├── 08_core_math_concepts/           # Essential math for machine learning and NLP
+│   └── Linear_Algebra/               # Linear algebra basics
+├── 09_Mini_Project/                 # End-to-end ML & NLP mini projects
+│   ├── Breast_Cancer_Binary_Classification/  # Classification project with cancer dataset
+│   ├── IMDB_Movie_Review_Sentiment_Analysis/ # Sentiment analysis using IMDB data
+│   └── Recommendation_Systems/               # Collaborative filtering & content-based recommenders
+├── 10_framework/                    # Deep learning frameworks
+│   ├── pytorch/                      # PyTorch-based experiments
+│   └── tensorflow_keras/            # TensorFlow/Keras projects
+├── 11_certificates/                # Completed course certificates
+├── 12_data/                        # Datasets used across the projects
+└── 13_NLTK/                        # Experiments using the NLTK library
+
+
+
+
 ---
 
 ##  Scripts
