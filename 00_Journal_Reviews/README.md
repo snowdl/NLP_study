@@ -1,44 +1,35 @@
 # Journal Reviews
 
-This folder contains summaries and related files for academic journal papers that we review as part of our NLP study.
+This folder contains summary PDFs of key academic papers reviewed as part of our NLP study.
 
-## Folder Structure
+## File List
 
-00_Journal_Reviews/
-├── distilbert/
-│   └── DistilBERT.pdf
-├── ULMFiT.pdf
+- **BERT.pdf**  
+  BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding  
+  [Paper link](https://arxiv.org/abs/1810.04805)
 
-## Reviewed Papers
+- **DistilBERT.pdf**  
+  DistilBERT: A distilled version of BERT — smaller, faster, cheaper and lighter  
+  [Paper link](https://arxiv.org/pdf/1910.01108)
 
-- **DistilBERT: A distilled version of BERT — smaller, faster, cheaper and lighter**  
-  [https://arxiv.org/pdf/1910.01108](https://arxiv.org/pdf/1910.01108)
+- **ULMFiT.pdf**  
+  ULMFiT: Universal Language Model Fine-tuning for Text Classification  
+  [Paper link](https://arxiv.org/abs/1801.06146)
 
-- **ULMFiT: Universal Language Model Fine-tuning for Text Classification**  
-  Summary PDF: [ULMFiT.pdf](./ULMFiT.pdf)  
-  Highlights:
-  - Achieves state-of-the-art results on multiple text classification benchmarks.
-  - Especially effective for low-resource tasks, non-English languages, and new NLP problems.
-  - Demonstrates the impact of language model pretraining and novel fine-tuning strategies.
+## Highlights
 
----
+### BERT
+- Introduced a bidirectional transformer-based pre-training model for language understanding.
+- Achieved state-of-the-art results on various NLP tasks.
 
-More papers and summaries will be added here as the study progresses.
-# Journal Reviews
+### DistilBERT
+- A lightweight version of BERT with faster inference and smaller size while maintaining comparable performance.
+- Suitable for real-world applications with limited resources.
 
-This folder contains summaries and related files for academic journal papers that we review as part of our NLP study.
+### ULMFiT
+- Proposed an effective fine-tuning method for pre-trained language models in text classification.
+- Particularly strong on low-resource and non-English datasets.
 
-## Folder Structure
-
-00_Journal_Reviews/
-└── distilbert/
-└── DistilBERT.pdf
-
-
-Currently, there is only one paper reviewed here:
-
-- **DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter**  
-  [https://arxiv.org/pdf/1910.01108](https://arxiv.org/pdf/1910.01108)
 
 ---
 
