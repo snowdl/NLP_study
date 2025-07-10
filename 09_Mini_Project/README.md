@@ -19,6 +19,18 @@ This folder contains three mini projects focused on different machine learning a
 - Description: Sentiment classification on IMDB dataset using Bidirectional LSTM with Dropout.
 - Technologies: Python, TensorFlow/Keras, NLP preprocessing.
 
+### 4.IMDB Sentiment Analysis: From Tokenization to Advanced Evaluation**  
+   - **Path:** IMDB_Sentiment_Analysis/  
+   - **Notebook:** [IMDB Sentiment Analysis_From Tokenization to Advanced Evaluation.ipynb](IMDB_Sentiment_Analysis/IMDB%20Sentiment%20Analysis_From%20Tokenization%20to%20Advanced%20Evaluation.ipynb)  
+   - **Description:**  
+     This notebook covers a complete IMDB movie review sentiment analysis pipeline, including:  
+     - Text tokenization and integer encoding  
+     - Sequence padding  
+     - Embedding layer and model building with Bidirectional LSTM  
+     - Advanced evaluation techniques such as ROC-AUC, Precision-Recall curves, and Calibration curves  
+   - **Technologies:** Python, TensorFlow/Keras, NLP preprocessing, sklearn metrics, matplotlib
+
+
 ---
 
 ## How to Use
