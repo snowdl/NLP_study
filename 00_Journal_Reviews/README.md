@@ -43,29 +43,6 @@ This folder contains summary PDFs of key academic papers reviewed as part of our
 - Finds that RoBERTa and LLaMA3 70B perform best; traditional models still viable in simpler tasks.
 - Emphasizes importance of prompt engineering for stable and effective LLM performance.
 
----
-
-More papers and summaries will be added here as the study progresses.
-es LLMs (LLaMA3, GPT-4, Mistral) and ML models (SVM, Naive Bayes) on binary/multiclass classification tasks.  
-  Highlights prompt engineering techniques like CoT, RP, NA.  
-  → [📄 PDF 보기](LARGE%20LANGUAGE%20MODELS%20FOR%20TEXT%20CLASSIFICATION-%20CASE%20STUDY%20AND%20COMPREHENSIVE%20REVIEW.pdf)
-
-
-
-## Highlights
-
-### BERT
-- Introduced a bidirectional transformer-based pre-training model for language understanding.
-- Achieved state-of-the-art results on various NLP tasks.
-
-### DistilBERT
-- A lightweight version of BERT with faster inference and smaller size while maintaining comparable performance.
-- Suitable for real-world applications with limited resources.
-
-### ULMFiT
-- Proposed an effective fine-tuning method for pre-trained language models in text classification.
-- Particularly strong on low-resource and non-English datasets.
-
 
 ---
 
