@@ -30,6 +30,17 @@ This folder contains three mini projects focused on different machine learning a
      - Advanced evaluation techniques such as ROC-AUC, Precision-Recall curves, and Calibration curves  
    - **Technologies:** Python, TensorFlow/Keras, NLP preprocessing, sklearn metrics, matplotlib
 
+### 5.News Classification with Bart and Evaluation_Visualization
+  - **Path:** 'BART/'
+  - *Notebook:** `model_evaluation_visualization.pt1.ipynb`
+  - **Description:**
+      Fine-tuning a pre-trained BERT model
+     - Includes full model training, evaluation, and metric visualization
+     - Classification report (precision, recall, F1)
+     - Confsioin matrix(seaborn and Plotly)
+     - Grouped metric bar charts using Plotly
+   - **Technologies:** Python, HuggingFace Transformers, TensorFlow/Keras, NLP preprocessing, sklearn metrics, matplotlib
+
 
 ---
 
