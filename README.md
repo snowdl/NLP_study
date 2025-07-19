@@ -1,4 +1,3 @@
-#  NLP_study
 
 Welcome! This repository is a comprehensive personal study notebook documenting my journey through various Natural Language Processing (NLP) and LLM-related online courses and projects.
 
@@ -30,33 +29,35 @@ The materials come from online lectures (Coursera, Udemy, K-MOOC, etc.) and incl
 ---
 ##  Scripts
 
-| File | Purpose |
-|------|---------|
-| `02_organize.sh` | Shell script for batch-renaming files/folders with numbering |
-| `03_readme.md` | Early version of README or subnotes |
+| File                          | Purpose                                                       |
+| ----------------------------- | ------------------------------------------------------------- |
+| `02_organize.sh`              | Batch rename folders/files with consistent numbering          |
+| `convert_paths.py`            | Convert all absolute paths to relative ones                   |
+| `convert_plotly_notebooks.sh` | Enable consistent project-root plotting                       |
+| `sync_notebooks.sh`           | Convert Jupyter notebooks to `.py` files for version tracking |
+| `setup_path.py`               | Dynamically manage sys.path for notebook execution            |
+
 
 ---
+## Folder Overview
 
 
-
-
-## :file_folder: Folder Overview
-
-| Folder | Description |
-|--------|-------------|
-| `01_NLP_Basics` | Introduction to NLP tasks and tokenization (`integer_encoding.ipynb`) |
-| `02_NLP_Concepts` | Core NLP concepts: stemming, lemmatization, stopwords, corpora |
-| `03_nlp_architectures` | Overview of NLP model types and pipeline structures |
-| `04_llm_related` | Practical LLM tasks & applications (e.g., movie recommender) |
-| `05_Data_Visualization` | Word clouds, frequency charts, embedding plots, etc. |
-| `06_Pandas_Numpy` | Python foundations for NLP: data manipulation, arrays |
-| `07_sklearn` | ML preprocessing & classical models with scikit-learn |
-| `08_core_math_concepts` | Math for NLP: vectors, matrices, softmax, probability |
-| `09_Mini_Project` | Small end-to-end NLP tasks (classification, summarization) |
-| `10_framework` | Framework tutorials (Hugging Face, PyTorch, etc.) |
-| `11_certificates` | Course completion screenshots / PDFs |
-| `12_data` | All datasets and data files used in this project |
-| `13_NLTK` | NLTK experiments (tokenization, POS tagging, etc.) |
+Folder                Description
+00_Journal_Reviews    Paper summaries and weekly research reading notes
+01_NLP_Basics         Introduction to NLP tasks and tokenization (integer_encoding.ipynb)
+02_NLP_Concepts       Core NLP concepts: stemming, lemmatization, stopwords, corpora
+03_nlp_architectures  Overview of NLP model types and pipeline structures
+04_llm_related        Practical LLM tasks & applications (e.g., movie recommender)
+05_Data_Visualization Word clouds, frequency charts, embedding plots, etc.
+06_Pandas_Numpy       Python foundations for NLP: data manipulation, arrays
+07_sklearn            ML preprocessing & classical models with scikit-learn
+08_core_math_concepts Math for NLP: vectors, matrices, softmax, probability
+09_Mini_Project       Small end-to-end NLP tasks (classification, summarization)
+10_framework          Framework tutorials (Hugging Face, PyTorch, etc.)
+11_certificates       Course completion screenshots / PDFs
+12_data               All datasets and data files used in this project
+13_NLTK               NLTK experiments (tokenization, POS tagging, etc.)
+14_Kaggle             Kaggle competitions and ensemble model experiments
 
 
 ---
