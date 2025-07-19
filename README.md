@@ -41,22 +41,23 @@ The materials come from online lectures (Coursera, Udemy, K-MOOC, etc.) and incl
 ---
 ## Folder Overview
 
+
 NLP_study/
-├── 00_Journal_Reviews        # Paper summaries and weekly research reading notes
-├── 01_NLP_Basics             # Introduction to NLP tasks and tokenization
-├── 02_NLP_Concepts           # Core NLP concepts: stemming, lemmatization, etc.
-├── 03_nlp_architectures      # Overview of NLP model types and pipeline structures
-├── 04_llm_related            # Practical LLM tasks & applications
-├── 05_Data_Visualization     # Word clouds, frequency charts, embedding plots
-├── 06_Pandas_Numpy           # Data manipulation, arrays
-├── 07_sklearn                # Classical ML models with scikit-learn
-├── 08_core_math_concepts     # Math for NLP: vectors, matrices, probability
-├── 09_Mini_Project           # End-to-end NLP tasks (e.g. classification, summarization)
-├── 10_framework              # Hugging Face, PyTorch tutorials
-├── 11_certificates           # Course completion screenshots / PDFs
-├── 12_data                   # Datasets used in this project
-├── 13_NLTK                   # NLTK tokenization, POS tagging, etc.
-└── 14_Kaggle                 # Kaggle competitions & ensemble model experiments
+├── 00_Journal_Reviews       # Paper summaries and weekly research reading notes
+├── 01_NLP_Basics            # Introduction to NLP tasks and tokenization
+├── 02_NLP_Concepts          # Core NLP concepts: stemming, lemmatization, etc.
+├── 03_nlp_architectures     # Overview of NLP model types and pipeline structures
+├── 04_llm_related           # Practical LLM tasks & applications
+├── 05_Data_Visualization    # Word clouds, frequency charts, embedding plots
+├── 06_Pandas_Numpy          # Data manipulation, arrays
+├── 07_sklearn               # Classical ML models with scikit-learn
+├── 08_core_math_concepts    # Math for NLP: vectors, matrices, probability
+├─   09_Mini_Project          # End-to-end NLP tasks (e.g. classification, summarization)
+|─   ─ 10_framework             # Hugging Face, PyTorch tutorials
+├── 11_certificates          # Course completion screenshots / PDFs
+├── 12_data                  # Datasets used in this project
+├── 13_NLTK                  # NLTK tokenization, POS tagging, etc.
+└── 14_Kaggle                # Kaggle competitions & ensemble model experiments
 
 
 ---
