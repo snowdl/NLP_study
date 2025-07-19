@@ -51,12 +51,12 @@ NLP_study/
 ├── 06_Pandas_Numpy           # Data manipulation, arrays
 ├── 07_sklearn                # Classical ML models with scikit-learn
 ├── 08_core_math_concepts     # Math for NLP: vectors, matrices, probability
-├── 09_Mini_Project           # End-to-end NLP tasks
+├── 09_Mini_Project           # End-to-end NLP tasks (e.g. classification, summarization)
 ├── 10_framework              # Hugging Face, PyTorch tutorials
-├── 11_certificates           # Course completion screenshots
+├── 11_certificates           # Course completion screenshots / PDFs
 ├── 12_data                   # Datasets used in this project
-├── 13_NLTK                   # NLTK tokenization, POS tagging
-└── 14_Kaggle                 # Kaggle competitions & ensemble models
+├── 13_NLTK                   # NLTK tokenization, POS tagging, etc.
+└── 14_Kaggle                 # Kaggle competitions & ensemble model experiments
 
 
 ---
