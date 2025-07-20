@@ -40,3 +40,4 @@ venv/
 *.tmp
 *~
 __pycache__/
+11_certificates/
