@@ -53,6 +53,35 @@ Some materials are adapted from online courses for **educational purposes only**
  If you have questions or suggestions, please **open an issue** or **contact me**.
 
 
+
+
+---
+
+## Certificates and Completed Courses
+
+### Certificates
+
+- **Deep Learning based Natural Language Processing**  
+  Completion: 2025-01-31  
+  Institution: Chung Ang University
+
+- **NLP - Natural Language Processing with Python**  
+  Completion: 2025-06-08  
+  Platform: Udemy
+
+- **Python For Data Science and Machine Learning BootCamp**  
+  Completion: 2025-05-18  
+  Platform: Udemy
+
+- **Deep Learning Prerequisites: The Numpy Stack in Python (V2+)**  
+  Completion: 2025-06-19  
+  Platform: Udemy
+
+- **Oracle Java Silver Programmer**  
+  Year: 2020
+
+
+
 ---
 
 ## Folder Structure
