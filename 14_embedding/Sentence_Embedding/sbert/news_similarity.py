@@ -4,7 +4,13 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer
 
-API_KEY = "***REMOVED***"
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+API_KEY = os.getenv("API_KEY")
+
 
 def fetch_news(query="AI", page_size=100):
     # Construct the URL for the NewsAPI request with given query parameters
