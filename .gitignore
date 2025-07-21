@@ -41,3 +41,5 @@ venv/
 *~
 __pycache__/
 11_certificates/
+15_llm/Other_Architectures/T5/results/
+
