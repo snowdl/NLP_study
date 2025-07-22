@@ -7,20 +7,19 @@ This folder contains basic linguistic analysis tasks using Python and NLP librar
 Each subfolder contains code files and notebooks for a specific task:
 
 Linguistic_Analysis/
-│
 ├── pos_tagging/
-│ ├── pos_tagging.ipynb
-│ └── pos_tagging.py
+│   ├── pos_tagging.ipynb         # Jupyter notebook for POS tagging
+│   └── pos_tagging.py            # Script version of POS tagging
 │
 ├── dependency_parsing/
-│ ├── dependency_parsing.ipynb
-│ └── dependency_parsing.py
+│   ├── dependency_parsing.ipynb  # Jupyter notebook for dependency parsing
+│   └── dependency_parsing.py     # Script version of dependency parsing
 │
 ├── constituency_parsing/
-│ └── constituency_parsing.py
+│   └── constituency_parsing.py   # Script for constituency parsing
 │
 ├── named_entity_recognition/
-│ └── named_entity_recognition.py
+│   └── named_entity_recognition.py # Script for NER
 
 
 
