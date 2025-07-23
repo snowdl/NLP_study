@@ -25,6 +25,21 @@ This folder contains summary PDFs of key academic papers reviewed as part of our
   [Paper link](https://arxiv.org/pdf/2501.08457v1)  
   [📄 PDF 보기](LARGE%20LANGUAGE%20MODELS%20FOR%20TEXT%20CLASSIFICATION-%20CASE%20STUDY%20AND%20COMPREHENSIVE%20REVIEW.pdf)
 
+
+
+-**GPT_Clustering_2024.pdf**
+GPT Clustering for Large-Scale Text Data
+Reviews clustering techniques leveraging GPT models to improve text grouping and semantic understanding.
+Explores methods to combine embeddings with GPT for efficient clustering.
+Discusses application scenarios such as document organization and topic modeling
+-Paper link[https://arxiv.org/pdf/2403.15112]
+
+
+
+
+
+
+
 ## Highlights
 
 ### BERT
@@ -42,6 +57,15 @@ This folder contains summary PDFs of key academic papers reviewed as part of our
 - Benchmarks LLMs and traditional ML models on real-world classification tasks (FakeNewsNet, Employee Reviews).
 - Finds that RoBERTa and LLaMA3 70B perform best; traditional models still viable in simpler tasks.
 - Emphasizes importance of prompt engineering for stable and effective LLM performance.
+
+
+###GPT_Clustering_2024.pdf
+-GPT Clustering for Large-Scale Text Data
+-Reviews clustering techniques leveraging GPT models to improve text grouping and semantic understanding.
+-Explores methods to combine embeddings with GPT for efficient clustering.
+-Discusses application scenarios such as document organization and topic modeling.
+-Paper link[https://arxiv.org/pdf/2403.15112]
+
 
 
 ---
