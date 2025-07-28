@@ -1,0 +1,43 @@
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# macOS hidden files
+.DS_Store
+
+# VSCode settings
+.vscode/
+
+# Python virtual environments
+env/
+venv/
+.venv/
+
+# Environment config
+.env
+*.env
+
+# Jupyter Notebook autosaves
+*.checkpoint.ipynb
+
+# Output and data files
+*.csv
+*.tsv
+*.xlsx
+*.json
+*.log
+*.sav
+*.h5
+*.zip
+*.tar.gz
+
+# Temporary/backup files
+*.bak
+*.tmp
+*~
+__pycache__/
+11_certificates/
