@@ -1,0 +1,124 @@
+
+# 📚 Study Summary (0624)
+
+---
+
+## 1. Naive Bayes Concept and Calculation
+
+- **Naive Bayes** is a probability-based classification algorithm  
+  that calculates the probability that a document or data belongs to a specific class.
+
+- Based on **Bayes' Theorem**:
+
+  \[
+  P(	ext{class} \mid 	ext{document}) = rac{P(	ext{document} \mid 	ext{class}) \cdot P(	ext{class})}{P(	ext{document})}
+  \]
+
+- **Naive Assumption (Conditional Independence Rule)**:
+  - Assumes that each word in a document is conditionally independent given the class
+  - Simplifies the calculation as follows:
+
+  \[
+  P(	ext{class} \mid 	ext{document}) \propto P(	ext{class}) \cdot \prod_{i} P(	ext{word}_i \mid 	ext{class})
+  \]
+
+- **Term Summary**:
+
+  | Term | Meaning |
+  |------|---------|
+  | \(P(	ext{class})\) | Prior probability |
+  | \(P(	ext{word}_i \mid 	ext{class})\) | Likelihood |
+  | \(P(	ext{document})\) | Normalizing constant (can be omitted in comparison) |
+
+- **Advantages**: Simple, fast, and works with small datasets  
+- **Disadvantages**: Ignores word dependencies (e.g., "not happy")
+
+---
+
+## 1-1. 🔍 Naive Bayes Conditional Independence Rule
+
+- Assumes words in a document are conditionally **independent** given the class
+
+- Example:
+  \[
+  P(	ext{positive} \mid 	ext{"I am happy"}) \propto P(	ext{positive}) \cdot P(I \mid 	ext{positive}) \cdot P(am \mid 	ext{positive}) \cdot P(happy \mid 	ext{positive})
+  \]
+
+- Cannot capture context such as negation ("not happy")
+
+---
+
+## 1-2. 💬 Sentiment Analysis Using Naive Bayes — Step-by-Step Example
+
+### ✏️ Input Sentence:
+> `"I am happy because I am learning NLP, not sad"`
+
+### 🔍 Analysis Steps:
+
+1. Tokenize the sentence into words  
+2. Estimate class-conditional probabilities from training data  
+3. Set prior probabilities  
+4. Multiply word probabilities for each class to compute score  
+5. Choose the class with the highest score
+
+---
+
+## 1-3. ⚠️ Practical Considerations in Implementation
+
+### ✅ (a) Using Log Probabilities
+
+- Multiplying many small probabilities can cause **underflow**  
+- Solution: Use **logarithms and addition** instead
+
+\[
+\log P(y \mid x) \propto \log P(y) + \sum_i \log P(x_i \mid y)
+\]
+
+> This makes the calculation numerically stable and faster
+
+---
+
+### ✅ (b) Laplace Smoothing
+
+- If a word in test data doesn't appear in training data,  
+  its probability becomes 0 → the entire result becomes 0  
+- Solution: Add 1 to all word counts
+
+\[
+P(x_i \mid y) = rac{	ext{word count} + 1}{	ext{total word count} + V}
+\]
+
+- \(V\): Vocabulary size
+
+> Assigns a small probability to unseen words, improving robustness
+
+---
+
+## 2. Conditional Probability
+
+- The probability that event A occurs given that event B has occurred
+
+\[
+P(A \mid B) = rac{P(A \cap B)}{P(B)}
+\]
+
+- Example questions:
+  - Among soccer team members, those taller than 170cm: \( rac{25}{40} = 62.5\% \)
+  - Among remote workers, those who drink coffee: \( rac{60}{120} = 50\% \)
+
+---
+
+## 3. Bayes’ Rule
+
+- Allows flipping conditional probabilities:
+
+\[
+P(A \mid B) = rac{P(B \mid A) \cdot P(A)}{P(B)}
+\]
+
+- Example:
+  - 80 out of 100 patients with the disease tested positive  
+    Out of 150 total positives →  
+    \(P(	ext{disease} \mid 	ext{positive}) = rac{80}{150} = 53.33\%\)
+
+---
