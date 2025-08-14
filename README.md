@@ -83,6 +83,11 @@ All code and notebooks use **relative paths** (e.g., `./12_data/filename`).
 - **DeepLearning.AI NLP Specialization** — Coursera  
 - **TensorFlow & PyTorch Bootcamp** — Udemy
 
+- **Oracle Java Silver Programmer**  
+  Year: 2020
+
+
+
 ---
 
 ## 📌 Notes
@@ -93,9 +98,6 @@ Some materials are adapted from online courses for **educational purposes only**
 Feel free to **fork**, **star**, or **contribute**!  
 If you have questions or suggestions, please **open an issue** or **contact me**.
 
-Welcome! This repository is a comprehensive personal study notebook documenting my journey through various Natural Language Processing (NLP) and LLM-related online courses and projects.
-
-The materials come from online lectures (Coursera, Udemy, K-MOOC, etc.) and include hands-on coding, math fundamentals, mini projects, and certificate logs.
 
 ---
 
@@ -106,19 +108,6 @@ The materials come from online lectures (Coursera, Udemy, K-MOOC, etc.) and incl
 -  Build a clean, traceable portfolio for NLP/AI graduate program applications  
 -  Serve as a long-term learning and revision hub
 
----
-## :package: Tech Stack & Tools
-
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python)](https://www.python.org)  
-[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=Jupyter)](https://jupyter.org)  
-[![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy)](https://numpy.org)  
-[![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas)](https://pandas.pydata.org)  
-[![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=matplotlib)](https://matplotlib.org)  
-[![Seaborn](https://img.shields.io/badge/Seaborn-76B900?style=flat-square)](https://seaborn.pydata.org)  
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)  
-[![spaCy](https://img.shields.io/badge/spaCy-09A3D5?style=flat-square)](https://spacy.io)  
-[![HuggingFace](https://img.shields.io/badge/Hugging%20Face-FFD21F?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co)  
-[![Shell](https://img.shields.io/badge/Shell-FFD500?style=flat-square&logo=gnu-bash)](https://www.gnu.org/software/bash)
 
 ---
 ##  Scripts
@@ -146,33 +135,6 @@ Some materials are adapted from online courses for **educational purposes only**
  Feel free to **fork**, **star**, or **contribute**!  
  If you have questions or suggestions, please **open an issue** or **contact me**.
 
-
-
-
----
-
-## Certificates and Completed Courses
-
-### Certificates
-
-- **Deep Learning based Natural Language Processing**  
-  Completion: 2025-01-31  
-  Institution: Chung Ang University
-
-- **NLP - Natural Language Processing with Python**  
-  Completion: 2025-06-08  
-  Platform: Udemy
-
-- **Python For Data Science and Machine Learning BootCamp**  
-  Completion: 2025-05-18  
-  Platform: Udemy
-
-- **Deep Learning Prerequisites: The Numpy Stack in Python (V2+)**  
-  Completion: 2025-06-19  
-  Platform: Udemy
-
-- **Oracle Java Silver Programmer**  
-  Year: 2020
 
 
 
