@@ -105,8 +105,6 @@ If you have questions or suggestions, please **open an issue** or **contact me**
 
 -  Systematically organize concepts and code from NLP/LLM courses  
 -  Practice key techniques from scratch using Python  
--  Build a clean, traceable portfolio for NLP/AI graduate program applications  
--  Serve as a long-term learning and revision hub
 
 
 ---
