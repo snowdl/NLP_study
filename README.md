@@ -1,3 +1,97 @@
+# NLP Study & Projects Repository
+
+Welcome! This repository is a comprehensive personal study notebook documenting my journey through various Natural Language Processing (NLP) and Large Language Model (LLM) topics.
+
+The materials come from online lectures (Coursera, Udemy, K-MOOC, etc.) and include:
+- Hands-on coding exercises
+- Math fundamentals
+- Mini projects
+- Research paper reviews
+- Prototype implementations
+
+---
+
+## 🎯 Repository Purpose
+
+- Systematically organize concepts and code from NLP/LLM courses
+- Practice key techniques from scratch using Python
+- Build a clean, traceable portfolio for NLP/AI graduate program applications
+- Serve as a long-term learning and revision hub
+- Showcase applied work for the Georgia Tech OMSCS program (Machine Learning / NLP focus)
+
+---
+
+## 📦 Tech Stack & Tools
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python)](https://www.python.org)
+[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=Jupyter)](https://jupyter.org)
+[![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy)](https://numpy.org)
+[![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas)](https://pandas.pydata.org)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=matplotlib)](https://matplotlib.org)
+[![Seaborn](https://img.shields.io/badge/Seaborn-76B900?style=flat-square)](https://seaborn.pydata.org)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
+[![spaCy](https://img.shields.io/badge/spaCy-09A3D5?style=flat-square)](https://spacy.io)
+[![HuggingFace](https://img.shields.io/badge/Hugging%20Face-FFD21F?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co)
+[![Shell](https://img.shields.io/badge/Shell-FFD500?style=flat-square&logo=gnu-bash)](https://www.gnu.org/software/bash)
+
+---
+
+## 📂 Featured Projects
+
+- [**RAG Evaluation Pipeline**](./15_llm/Applications/RAG/) – Custom retrieval, reranker integration, and evaluation scripts
+- [**Multilingual Sentiment Analysis Tool**](./09_Mini_Project/sentiment_analysis/) – Sentiment classification in Korean, Japanese, and English
+- [**LLM Marketing Assistant Prototype**](./15_llm/Applications/LLM_Marketing_Assistant/) – Keyword-driven automated journey generation
+
+---
+
+## 📄 Recent Paper Reviews
+
+- [DOUBLE-BENCH: Document RAG Evaluation Benchmark](./00_Journal_Reviews/Evaluation/README.md)
+
+---
+
+## 📜 Scripts
+
+| File                          | Purpose                                                       |
+| ----------------------------- | ------------------------------------------------------------- |
+| `02_organize.sh`              | Batch rename folders/files with consistent numbering          |
+| `convert_paths.py`            | Convert all absolute paths to relative ones                   |
+| `convert_plotly_notebooks.sh` | Enable consistent project-root plotting                       |
+| `sync_notebooks.sh`           | Convert Jupyter notebooks to `.py` files for version tracking |
+| `setup_path.py`               | Dynamically manage sys.path for notebook execution            |
+
+---
+
+## 📍 Data Location
+
+All datasets and data files are located in the `12_data/` folder.  
+All code and notebooks use **relative paths** (e.g., `./12_data/filename`).  
+
+**Important:** Please run all code from the project **root directory** (`NLP_study/`).
+
+---
+  
+## 🏅 Certificates and Completed Courses
+
+### Certificates
+- **Deep Learning based Natural Language Processing**  
+  Completion: 2025-01-31 — Chung Ang University  
+- **NLP - Natural Language Processing with Python**  
+  Completion: 2025-06-08 — Udemy  
+
+### In Progress
+- **DeepLearning.AI NLP Specialization** — Coursera  
+- **TensorFlow & PyTorch Bootcamp** — Udemy
+
+---
+
+## 📌 Notes
+
+This repository is intended for **study**, **practice**, and **portfolio building**.  
+Some materials are adapted from online courses for **educational purposes only**.  
+
+Feel free to **fork**, **star**, or **contribute**!  
+If you have questions or suggestions, please **open an issue** or **contact me**.
 
 Welcome! This repository is a comprehensive personal study notebook documenting my journey through various Natural Language Processing (NLP) and LLM-related online courses and projects.
 
