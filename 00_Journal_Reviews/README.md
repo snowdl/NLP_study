@@ -17,7 +17,7 @@ Each entry links to the paper (if available) and the corresponding PDF or notes 
 
 ### 2. [DistilBERT.pdf](./DistilBERT.pdf)  
 **Title:** DistilBERT: A distilled version of BERT — smaller, faster, cheaper, and lighter  
-- Retains 97% of BERT's language understanding while being 40% smaller and 60% faster.  
+- Retains most of BERT’s language understanding while being smaller and faster.  
 - Suitable for resource-constrained real-world applications.  
 - **[Paper link](https://arxiv.org/abs/1910.01108)**
 
@@ -25,37 +25,62 @@ Each entry links to the paper (if available) and the corresponding PDF or notes 
 
 ### 3. [ULMFiT.pdf](./ULMFiT.pdf)  
 **Title:** ULMFiT: Universal Language Model Fine-tuning for Text Classification  
-- Proposed a fine-tuning method for pre-trained language models in text classification.  
+- Proposed a transfer learning and fine-tuning method for text classification.  
 - Particularly effective in low-resource and non-English datasets.  
 - **[Paper link](https://arxiv.org/abs/1801.06146)**
 
 ---
 
-### 4. [LARGE LANGUAGE MODELS FOR TEXT CLASSIFICATION — CASE STUDY AND COMPREHENSIVE REVIEW.pdf](./LARGE%20LANGUAGE%20MODELS%20FOR%20TEXT%20CLASSIFICATION-%20CASE%20STUDY%20AND%20COMPREHENSIVE%20REVIEW.pdf)  
-- Benchmarks LLMs (LLaMA3, GPT-4, Mistral) and ML models (SVM, Naive Bayes) on binary/multiclass classification tasks.  
-- Finds RoBERTa and LLaMA3 70B perform best; traditional models still viable for simpler tasks.  
-- Emphasizes the importance of prompt engineering (Chain-of-Thought, Role Prompting, No-Anchor).  
+### 4. [LARGE LANGUAGE MODELS FOR TEXT CLASSIFICATION- CASE STUDY AND COMPREHENSIVE REVIEW.pdf](./LARGE%20LANGUAGE%20MODELS%20FOR%20TEXT%20CLASSIFICATION-%20CASE%20STUDY%20AND%20COMPREHENSIVE%20REVIEW.pdf)  
+**Title:** Large Language Models for Text Classification – Case Study & Review  
+- Benchmarks LLMs (e.g., LLaMA3, GPT-4, Mistral) and classic ML models (SVM, Naive Bayes).  
+- Finds strong performance from large transformer models; classic models still viable on simpler tasks.  
+- Highlights prompt engineering strategies (CoT, role prompting, etc.).  
+- **[Paper link](https://arxiv.org/abs/2501.08457)**
 
 ---
 
 ### 5. [GPT_Clustering_2024.pdf](./GPT_Clustering_2024/GPT_Clustering_2024.pdf)  
 **Title:** GPT Clustering for Large-Scale Text Data  
-- Reviews clustering techniques leveraging GPT models for text grouping and semantic understanding.  
-- Explores methods to combine embeddings with GPT for efficient clustering.  
-- Discusses application scenarios such as document organization and topic modeling.  
-- **[Paper link](https://arxiv.org/pdf/2403.15112)**
+- Reviews clustering techniques leveraging GPT models for semantic grouping.  
+- Explores combining embeddings with GPT for efficient large-scale clustering.  
+- Discusses applications in document organization and topic modeling.  
+- **[Paper link](https://arxiv.org/abs/2403.15112)**
 
 ---
 
 ### 6. [Evaluation (DOUBLE-BENCH)](./Evaluation/README.md)  
 **Title:** Are We on the Right Way for Assessing Document Retrieval-Augmented Generation?  
-- Introduces DOUBLE-BENCH, a large-scale multilingual & multimodal benchmark for Document RAG.  
-- Provides fine-grained evaluation of RAG pipeline components (retrieval, selection, reasoning, generation).  
-- Addresses data contamination and supports multiple document types.  
+- Introduces DOUBLE-BENCH, a multilingual & multimodal benchmark for Document RAG.  
+- Provides fine-grained evaluation across retrieval, selection, reasoning, and generation.  
+- Addresses data contamination and supports diverse document types (text/tables/scans).  
 - **[Paper link](https://arxiv.org/abs/2508.03644)**
 
 ---
 
+### 7. [Reflexion_Language_Agents_with_RL.pdf](./Reflexion_Language_Agents_with_RL.pdf)  
+**Title:** Reflexion: Language Agents with Verbal Reinforcement Learning  
+- Enables agents to learn from verbal feedback via self-reflection.  
+- Improves multi-step reasoning and decision-making through iterative refinement.  
+- **[Paper link](https://arxiv.org/pdf/2303.11366)**
+
+---
+
+### 8. [CRAG.pdf](./CRAG/CRAG.pdf)  
+**Title:** CRAG: A Comprehensive Retrieval-Augmented Generation Benchmark  
+- Benchmarks RAG systems across tasks and domains, focusing on retrieval quality and grounded generation.  
+- Designed to improve robustness and provide broad, extensible evaluation coverage.  
+- **[Paper link](https://arxiv.org/pdf/2401.15884)**
+
+---
+
+### 9. [toolformer.pdf](./toolformer/toolformer.pdf)  
+**Title:** Toolformer: Language Models Can Teach Themselves to Use Tools  
+- Teaches LMs to call external tools/APIs (e.g., calculator, search) via self-annotated data.  
+- Demonstrates gains on downstream tasks when tool usage is learned.  
+- Introduces a self-supervised objective to acquire tool-calling behaviors.  
+- **[Paper link](https://arxiv.org/abs/2303.16203)**
+
+---
+
 More papers and summaries will be added here as the study progresses.
-
-
