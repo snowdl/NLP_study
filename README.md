@@ -9,15 +9,7 @@ The materials come from online lectures (Coursera, Udemy, K-MOOC, etc.) and incl
 - Research paper reviews
 - Prototype implementations
 
----
 
-## 🎯 Repository Purpose
-
-- Systematically organize concepts and code from NLP/LLM courses
-- Practice key techniques from scratch using Python
-- Build a clean, traceable portfolio for NLP/AI graduate program applications
-- Serve as a long-term learning and revision hub
-- Showcase applied work for the Georgia Tech OMSCS program (Machine Learning / NLP focus)
 
 ---
 
