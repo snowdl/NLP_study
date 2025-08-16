@@ -81,6 +81,17 @@ Each entry links to the paper (if available) and the corresponding PDF or notes 
 - Introduces a self-supervised objective to acquire tool-calling behaviors.  
 - **[Paper link](https://arxiv.org/abs/2303.16203)**
 
+
+---
+
+### 10. [ReAct_Reasoning_Acting_in_LLM.pdf](./ReAct/ReAct_Reasoning_Acting_in_LLM.pdf)  
+**Title:** ReAct — Synergizing Reasoning and Acting in Language Models  
+- Introduces a unified framework that combines reasoning (Thought) and acting (Action) in language models.  
+- Enables explicit intermediate steps (Thought → Action → Observation → Answer), improving transparency and error analysis.  
+- Demonstrates effectiveness on tasks like question answering, fact-checking, and interaction with external tools.  
+- Applied in this repo with a case study on the Iris dataset (ReAct vs Non-ReAct workflows).  
+- **[Paper link](https://arxiv.org/abs/2210.03629)**
+
 ---
 
 More papers and summaries will be added here as the study progresses.
