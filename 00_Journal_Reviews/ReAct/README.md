@@ -51,3 +51,38 @@ We compare **Baseline (non-ReAct)** approaches with **ReAct-style reasoning-acti
 
 ## Execution Order (Always Follow These Steps)
 
+1. **Run data & tool cells**  
+   - `tool_mean_by_species`  
+   - `tool_wikipedia_summary`  
+   - `_infer_wiki_term`  
+
+2. **Run handler cells**  
+   - `baseline_internal`, `baseline_external`  
+   - `react_internal_avg_by_species`, `react_external_explain_species`  
+
+3. **Run evaluation utilities (4 cells)**  
+   - `eval_internal`, `eval_external`, `summarize` (and helpers)  
+
+4. **Run examples or `run_all()`**  
+   - Generates on-screen results  
+   - Saves CSVs: `react_vs_baseline_detail.csv`, `react_vs_baseline_summary.csv`
+
+---
+
+## Request–Response Pipeline (ReAct Internal)
+User input (query) ─┐
+├─> react_internal_avg_by_species(query, df)
+DataFrame (df) ─────┘
+│
+▼
+Dictionary (dict) returned
+┌─────────────────────────────┐
+│ Thought: ... │
+│ Action: ... │
+│ Observation: pandas result │
+│ Answer: final response text │
+└─────────────────────────────┘
+│
+▼
+Stored in res
+
