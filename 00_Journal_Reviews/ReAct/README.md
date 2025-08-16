@@ -70,33 +70,31 @@ We compare **Baseline (non-ReAct)** approaches with **ReAct-style reasoning-acti
 ---
 
 ## Request–Response Pipeline (ReAct Internal)
-+---------------------+
-| User input (query)  |
-+----------+----------+
-           |
-           v
++-----------------------+
+|  User input (query)   |
++-----------+-----------+
+            |
+            v
 +-------------------------------+
 | react_internal_avg_by_species |
 | (query, df)                   |
-+-------------------+-----------+
-                    ^
-+-------------------|-----------+
-|   DataFrame (df)  |           |
-+-------------------+-----------+
-
-           |
-           v
++---------------+---------------+
+                ^
++---------------|---------------+
+|        DataFrame (df)         |
++---------------+---------------+
+                |
+                v
 +---------------------------------------+
-|  Dictionary (dict) returned           |
-|  -----------------------------------  |
-|  Thought: ...                         |
-|  Action: ...                          |
-|  Observation: pandas result           |
-|  Answer: final response text          |
-+-------------------+-------------------+
-                    |
-                    v
-+-------------------+-------------------+
+|      Dictionary (dict) returned       |
+| ------------------------------------  |
+| Thought: ...                          |
+| Action: ...                           |
+| Observation: pandas result            |
+| Answer: final response text           |
++-----------------------+---------------+
+                        |
+                        v
++-----------------------+---------------+
 |     Stored in res variable            |
 +---------------------------------------+
-
