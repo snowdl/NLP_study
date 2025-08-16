@@ -70,31 +70,38 @@ We compare **Baseline (non-ReAct)** approaches with **ReAct-style reasoning-acti
 ---
 
 ## Request–Response Pipeline (ReAct Internal)
-+-----------------------+
-|  User input (query)   |
-+-----------+-----------+
-            |
-            v
-+-------------------------------+
-| react_internal_avg_by_species |
-| (query, df)                   |
-+---------------+---------------+
-                ^
-+---------------|---------------+
-|        DataFrame (df)         |
-+---------------+---------------+
-                |
-                v
-+---------------------------------------+
-|      Dictionary (dict) returned       |
-| ------------------------------------  |
-| Thought: ...                          |
-| Action: ...                           |
-| Observation: pandas result            |
-| Answer: final response text           |
-+-----------------------+---------------+
-                        |
-                        v
-+-----------------------+---------------+
-|     Stored in res variable            |
-+---------------------------------------+
+<h3>Request–Response Flow (ReAct Internal)</h3>
+
+<table>
+  <tr>
+    <td style="white-space:nowrap;padding:6px 10px;border:1px solid #ddd;"><b>User input (query)</b></td>
+    <td style="padding:6px 10px;text-align:center;">→</td>
+    <td style="white-space:nowrap;padding:6px 10px;border:1px solid #ddd;"><code>react_internal_avg_by_species(query, df)</code></td>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;padding:6px 10px;border:1px solid #ddd;"><b>DataFrame (df)</b></td>
+    <td style="padding:6px 10px;text-align:center;">↗</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="3" style="padding:4px 10px;text-align:center;">↓</td>
+  </tr>
+  <tr>
+    <td colspan="3" style="padding:0;border:1px solid #ddd;">
+      <pre style="margin:0;padding:10px;overflow:auto;">Dictionary (dict) returned
+---------------------------------------
+Thought: ...
+Action: ...
+Observation: pandas result
+Answer: final response text</pre>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3" style="padding:4px 10px;text-align:center;">↓</td>
+  </tr>
+  <tr>
+    <td colspan="3" style="padding:6px 10px;border:1px solid #ddd;text-align:center;">
+      <code>res</code> (stored)
+    </td>
+  </tr>
+</table>
