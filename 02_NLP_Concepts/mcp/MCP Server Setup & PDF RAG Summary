@@ -1,0 +1,90 @@
+좋습니다 🙌 바로 깃헙 README에 복붙해서 쓰실 수 있게 전체 정리된 버전 드릴게요.
+
+````markdown
+# MCP Server Setup & PDF RAG Summary
+
+## 📌 Goal
+Set up a local **MCP (Model Context Protocol) server**, connect it to **Claude Desktop**, and test it with a sample PDF.
+
+---
+
+## ⚙️ 1. Environment Setup
+```bash
+# Create and activate venv
+python3 -m venv .venv
+source .venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# If missing, install manually
+pip install fastmcp
+````
+
+## 🔑 2. API Key Configuration
+
+Create a `.env` file in the project root:
+
+```bash
+OPENAI_API_KEY=sk-xxxxxx
+```
+
+## 📂 3. Data Preparation
+
+Copy your PDF into the data folder:
+
+```bash
+cp ~/Desktop/textclustering.pdf ~/project-path/data/
+```
+
+## ⚙️ 4. Generate MCP Config
+
+```bash
+cd case1
+python auto_mcp_json.py
+```
+
+This generates `mcp_config.json` with the server definition:
+
+```json
+{
+  "mcpServers": {
+    "rag-mcp": {
+      "command": "~/project-path/.venv/bin/python",
+      "args": [
+        "~/project-path/case1/mcp_server.py"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "sk-xxxxxx",
+        "DEFAULT_TOP_K": "5"
+      }
+    }
+  }
+}
+```
+
+## 💻 5. Run MCP Server
+
+```bash
+cd case1
+python mcp_server.py
+```
+
+## 🤝 6. Claude Desktop Integration
+
+* Open **Claude Desktop → Settings → MCP Servers**
+* Paste the contents of `mcp_config.json`
+* Restart Claude
+  → You should now see **rag-mcp** listed under available tools.
+
+## ✅ 7. Test
+
+Inside Claude, try:
+
+* Summarize the `textclustering.pdf`
+* Find mentions of `"clustering algorithm"` in `textclustering.pdf`
+
+```
+
+---
+
