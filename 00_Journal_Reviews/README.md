@@ -99,7 +99,7 @@ Title: Harnessing the Power of LLMs in Practice
 Provides a comprehensive guide for practitioners deploying LLMs in real-world scenarios.
 Covers system design choices, prompt engineering strategies, evaluation methods, and deployment challenges.
 Highlights trade-offs in efficiency, accuracy, and safety when applying LLMs at scale.
-Paper link: [arXiv:2304.13712](https://arxiv.org/pdf/2304.13712)
+- **Paper link: [arXiv:2304.13712](https://arxiv.org/pdf/2304.13712)
 
 
 ---
