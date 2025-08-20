@@ -93,5 +93,14 @@ Each entry links to the paper (if available) and the corresponding PDF or notes 
 - **[Paper link](https://arxiv.org/abs/2210.03629)**
 
 ---
+11. Harnessing the Power of LLMs in Practice.pdf
+Title: Harnessing the Power of LLMs in Practice
 
+Provides a comprehensive guide for practitioners deploying LLMs in real-world scenarios.
+Covers system design choices, prompt engineering strategies, evaluation methods, and deployment challenges.
+Highlights trade-offs in efficiency, accuracy, and safety when applying LLMs at scale.
+Paper link: [arXiv:2304.13712](https://arxiv.org/pdf/2304.13712)
+
+
+---
 More papers and summaries will be added here as the study progresses.
