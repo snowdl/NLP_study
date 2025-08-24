@@ -47,3 +47,16 @@ __pycache__/
 *.safetensors
 *.onnx
 *.pth
+
+# Rasa artifacts
+models/
+logs/
+results*/
+.rasa/
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
