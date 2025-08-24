@@ -8,4 +8,4 @@
 - [Text Processing](text_processing.pdf)
 - [One-hot Encoding](one_hot_encoding.pdf)
 - [Dw-WW TF-IDF](dw_ww_tf_idf.pdf)
-
+- [Encoding vs Embedding](encoding_vs_embedding.pdf)
