@@ -6,4 +6,5 @@
 - [Text Processing](text_processing.pdf)
 - [Padding](padding.pdf)
 - [Text Processing](text_processing.pdf)
+- [One-hot Encoding](one_hot_encoding.pdf)
 
