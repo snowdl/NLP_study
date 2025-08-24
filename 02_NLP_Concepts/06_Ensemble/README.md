@@ -6,4 +6,5 @@
 - [Boosting - XGBoost](boosting_xgboost.pdf)
 - [General Ensemble Overview](ensemble_overview.pdf)
 - [Ensemble Method](ensemble_method.pdf)
+- [Ensemble Method](ensemble_method.pdf)
 
