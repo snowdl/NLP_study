@@ -7,6 +7,9 @@ This folder organizes a wide range of embedding techniques used in Natural Langu
 
 ## 📁 Folder Overview
 
+
+## 📁 Folder Overview
+
 ```plaintext
 Embedding/
 ├── Word_Embedding/
