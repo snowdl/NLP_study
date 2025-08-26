@@ -1,33 +1,46 @@
 # 📘 01_NLP_Basics
 
-This folder contains essential NLP foundational concepts and implementations. Each notebook introduces key preprocessing and representation techniques commonly used in Natural Language Processing pipelines.
+This folder introduces **fundamental NLP concepts and preprocessing techniques**.  
+It serves as the **starting point for beginners**, covering essential text processing, encoding methods, and simple models that build intuition for more advanced concepts in `02_NLP_Concepts`.
+
+---
 
 ## 📂 Contents
 
-| File/Folder | Description |
-|-------------|-------------|
-| `nlp-basic.ipynb` | Overview notebook introducing fundamental NLP concepts. |
-| `nlp_basic_01.ipynb` | Additional examples and extended concepts related to basic NLP preprocessing. |
-| `integer Encoding.ipynb` | Demonstrates integer-based encoding methods for representing text. |
-| `Sigmoid Function.ipynb` | Mathematical explanation and visualization of the sigmoid activation function. |
-| `Lemmatization_Stemming/` | Explains and compares stemming vs. lemmatization techniques with examples. |
-| `pattern_matching_analysis/` | Simple regex and rule-based pattern matching for text analysis. |
-| `spacy_text_classification/` | Text classification using spaCy’s built-in components. |
-| `vector_semantics/` | Introduces vector space models and semantic similarity calculations. |
+| File/Folder               | Description |
+|----------------------------|-------------|
+| `nlp-basic.ipynb`          | Overview notebook introducing core NLP foundations. |
+| `nlp_basic_01.ipynb`       | Additional examples of basic preprocessing and text handling. |
+| `integer Encoding.ipynb`   | Demonstrates integer encoding for text representation. |
+| `Sigmoid Function.ipynb`   | Mathematical explanation and visualization of the sigmoid function. |
+| `Lemmatization_Stemming/`  | Comparing stemming vs. lemmatization with examples. |
+| `pattern_matching_analysis/` | Regex and rule-based text pattern matching. |
+| `spacy_text_classification/` | Simple text classification using spaCy pipelines. |
+| `vector_semantics/`        | Intro to vector space models and semantic similarity. |
+
+---
 
 ## 🧠 Concepts Covered
 
-- Tokenization
-- Text normalization
-- Stemming & Lemmatization
-- Regular expression & pattern matching
-- Word embeddings & vector semantics
-- Basic classification using spaCy
-- Encoding techniques
-- Sigmoid function for logistic models
+- Tokenization & text normalization  
+- Integer encoding & simple embeddings  
+- Stemming & Lemmatization  
+- Regex & rule-based pattern matching  
+- Word embeddings (intro level) & semantic similarity  
+- Basic classification with spaCy  
+- Sigmoid function for logistic models  
+
+---
 
 ## 📌 Notes
 
-All notebooks are written in English and use relative paths to ensure compatibility across environments. These are part of a larger NLP study repository designed to prepare for graduate-level NLP programs.
+- These notebooks focus on **hands-on, beginner-friendly implementations**.  
+- Designed for learners transitioning from general data science into NLP.  
+- For **deeper embeddings, neural architectures, and Transformer-based methods**, see [`02_NLP_Concepts`](../02_NLP_Concepts).  
+- All notebooks use relative paths for portability and are written in English.
 
+---
 
+✅ In short:  
+- **01_NLP_Basics** = “NLP 101” → preprocessing, encodings, simple models  
+- **02_NLP_Concepts** = “NLP 201+” → embeddings, attention, neural architectures, Transformer family  
