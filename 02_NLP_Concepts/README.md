@@ -7,8 +7,14 @@
 ## 05. Evaluation          → [Folder](05_Evaluation)
 ## 06. Ensemble            → [Folder](06_Ensemble)
 ## 07. Activation          → [Folder](07_Activation)
-## 08. Encoding vs Embedding → [Folder](08_Encoding_vs_Embedding)
+## 08. Encoding vs. Embedding → [Folder](08_Encoding_vs_Embedding)
 ## 09. Intent Classification → [Folder](09_Intent_Classification)
 ## 10. Text Summarization  → [Folder](10_Text_Summarization)
-## 90. MCP                 → [Folder](90_MCP)
+## 11. Fine-Tuning         → [Folder](11_Fine_Tuning)
+## 12. Decoding            → [Folder](12_Decoding)
+
+---
+
+## 90. MCP (Misc/Projects) → [Folder](90_MCP)
 ## 99. Archive             → [Folder](99__archive)
+
