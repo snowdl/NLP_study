@@ -54,6 +54,18 @@ Each project demonstrates end-to-end experimentation: data preprocessing, model 
     - Image-text alignment demo using CLIP.  
     - Tech: Hugging Face, OpenAI CLIP.  
 
+12_IntentRouter
+
+   Rules-based intent router with minimal self-improvement.
+   - Flow: detect → fallback → call handler
+   - Self-improvement: logs gold labels, suggests new keywords
+   - File: [exp00_fc_self_improve_min.md](09_Mini_Project/12_IntentRouter/exp00_fc_self_improve_min.md)
+   Tech: Pure Python (no ML libraries)
+
+
+
+
+
 ---
 
 ## 🔎 How to Use
