@@ -6,3 +6,4 @@
 - [Deep Learning Training Methods](deep_learning_training_methods.pdf)
 - [Deep Learning Training & Model Selection](deep_learning_training_model_selection.pdf)
 - [Model Optimization](model_optimization.pdf)
+- [Learning to Rank (LTR)](LTR/LTR.pdf)
