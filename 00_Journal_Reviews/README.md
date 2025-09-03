@@ -103,4 +103,17 @@ Highlights trade-offs in efficiency, accuracy, and safety when applying LLMs at 
 
 
 ---
+
+### 12. [RAPTOR.pdf](./12_RAPTOR.pdf)  
+**Title:** RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval  
+- Proposes a tree-structured summarization and clustering method for retrieval-augmented LMs.  
+- Allows language models to retrieve relevant information at multiple abstraction levels.  
+- Improves efficiency and accuracy of RAG systems, especially on long-context tasks.  
+- Achieved +20% accuracy gain on QuALITY benchmark with GPT-4.  
+- **[Paper link](https://arxiv.org/abs/2401.18059)**
+
+
+
+
+---
 More papers and summaries will be added here as the study progresses.
