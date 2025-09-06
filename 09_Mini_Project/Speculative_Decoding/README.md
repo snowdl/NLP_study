@@ -68,6 +68,9 @@ Final : the wolf ran into the
 ➡️ A minimal n-gram example that illustrates the core idea behind **modern LLM speculative decoding**.
 
 ----
+
+##📊 Backoff Demo Results
+
 | Context (`(prev2, prev1)`) | What happens                                      | Distribution                                          | Sampled (T=1.0)                                      | Argmax |
 | -------------------------- | ------------------------------------------------- | ----------------------------------------------------- | ---------------------------------------------------- | ------ |
 | `('wolf','ran')`           | Trigram found                                     | `{'into': 1}`                                         | always `into`                                        | `into` |
