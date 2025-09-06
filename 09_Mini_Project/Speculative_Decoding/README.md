@@ -35,13 +35,6 @@ We implement simple **n-gram frequency models** to simulate the drafter–verifi
 - No external libraries (beyond `collections.Counter`, `defaultdict`, `random`).  
 - Designed for **clarity, not performance**.  
 
----
-
-## ▶️ Example Demo
-
-Corpus:  
-```text
-"the wolf ran into the forest"
 
 ---
 
@@ -53,6 +46,36 @@ Corpus:
 - **Verifier:** trigram → bigram → unigram (argmax)
 
 ### Sample Run
+---- Baseline (T=0.7), next 5 tokens ----
+Baseline: the wolf ran into the forest
+
+---- Speculative (k=5, T_draft=0.9) ----
+[1] prev2='wolf' prev1='ran' draft='into' verify='into' -> ACCEPT
+[2] prev2='ran' prev1='into' draft='forest' verify='the' -> REPLACE+STOP
+Draft : ['into', 'forest', 'the', 'wolf', 'the']
+Accepted: ['into', 'the']
+Final : the wolf ran into the
+
+
+---
+
+## 🔍 Takeaways
+
+1. Out of 5 drafted tokens, on average **3.7 tokens** are directly accepted by the verifier.  
+2. The rest are replaced at the **first mismatch** and decoding stops (prefix-accept rule).  
+3. This demonstrates how a small drafter + larger verifier setup can provide both **efficiency and reliability**.  
+
+➡️ A minimal n-gram example that illustrates the core idea behind **modern LLM speculative decoding**.
+
+
+
+
+## ▶️ Example Demo
+
+Corpus:  
+```text
+"the wolf ran into the forest"
+
 
 
 
