@@ -43,4 +43,16 @@ Corpus:
 ```text
 "the wolf ran into the forest"
 
+---
+
+## 🧪 Experiment Results: Baseline vs Speculative
+
+- **Prompt:** `["the", "wolf", "ran"]`  
+- **Draft length (k):** 5  
+- **Drafter temperature:** 0.9  
+- **Verifier:** trigram → bigram → unigram (argmax)
+
+### Sample Run
+
+
 
