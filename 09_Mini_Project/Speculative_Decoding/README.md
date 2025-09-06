@@ -67,6 +67,14 @@ Final : the wolf ran into the
 
 ➡️ A minimal n-gram example that illustrates the core idea behind **modern LLM speculative decoding**.
 
+----
+| Context (`(prev2, prev1)`) | What happens                                      | Distribution                                          | Sampled (T=1.0)                                      | Argmax |
+| -------------------------- | ------------------------------------------------- | ----------------------------------------------------- | ---------------------------------------------------- | ------ |
+| `('wolf','ran')`           | Trigram found                                     | `{'into': 1}`                                         | always `into`                                        | `into` |
+| `('ran','into')`           | Trigram found                                     | `{'the': 1}`                                          | always `the`                                         | `the`  |
+| `('the','wolf')`           | Trigram found                                     | `{'ran': 1}`                                          | always `ran`                                         | `ran`  |
+| `('hello','wolf')`         | Trigram missing → backoff to **bigram**           | `{'ran': 1}`                                          | always `ran`                                         | `ran`  |
+| `('hello','zzz')`          | Trigram & bigram missing → backoff to **unigram** | `{'the': 2, 'wolf':1, 'ran':1, 'into':1, 'forest':1}` | usually `the` (but sometimes others, since sampling) | `the`  |
 
 
 
