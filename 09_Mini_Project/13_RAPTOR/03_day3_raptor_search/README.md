@@ -1,6 +1,6 @@
 # Day 3 — RAPTOR Search
 
-This folder contains two simple baseline implementations of RAPTOR search, designed for beginners.
+This folder contains different versions of RAPTOR search implementations.
 
 ## Versions
 
@@ -8,27 +8,23 @@ This folder contains two simple baseline implementations of RAPTOR search, desig
 - **File:** [raptor_search_ultralite_keyword.md](./raptor_search_ultralite_keyword.md)
 - **Description:**  
   Simplest version. Ranks chunks by counting overlapping words between query and text.  
-  No extra libraries required (pure Python).  
-- **Pros:** Very easy to understand, minimal code.  
-- **Cons:** Only exact word matches, no semantic similarity.  
+  No extra libraries required.  
 
 ---
 
 ### 2. Lite: Simple TF-IDF-like Search
 - **File:** [raptor_search_lite_tfidf.md](./raptor_search_lite_tfidf.md)
 - **Description:**  
-  Slightly more advanced. Still no sklearn, but adds log-length normalization to mimic TF-IDF.  
-- **Pros:** More robust than keyword overlap. Reduces bias toward long texts.  
-- **Cons:** Still lexical only, not semantic.  
+  Slightly more advanced. Mimics TF-IDF with basic normalization.  
+  No sklearn dependency.  
 
 ---
 
-## Usage
-Both versions:
-1. Load `chunks.jsonl` from `outputs/`.  
-2. Run search with a query (e.g., `"What strange events happened on Privet Drive?"`).  
-3. Check top-k results and generated simple answers.
-
----
-
-✍️ Next steps: You can extend these baselines with real TF-IDF (using `sklearn`) or semantic search (using embeddings).
+### 3. Full RAPTOR Search (Standardized Pipeline)
+- **File:** [raptor_search_full.md](./raptor_search_full.md)
+- **Description:**  
+  Full node-based RAPTOR search pipeline using TF-IDF over node summaries.  
+  Includes:
+  - Step 5: Run Standardization  
+  - Step 6: RAPTOR Search Function  
+  - Step 7: Run & Show Results  
