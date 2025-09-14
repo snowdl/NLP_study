@@ -1,9 +1,7 @@
----
+# 🧩 Mini Projects in NLP_Study
 
-# 🧩 Mini Projects in NLP\_Study
-
-A collection of **machine learning & NLP mini projects**.
-Each project demonstrates **end-to-end experimentation**: preprocessing, training, evaluation, and documentation.
+A collection of **machine learning & NLP mini projects**.  
+Each project demonstrates **end-to-end experimentation**: preprocessing, training, evaluation, and documentation.  
 
 👉 Navigate into each folder for details.
 
@@ -11,106 +9,81 @@ Each project demonstrates **end-to-end experimentation**: preprocessing, trainin
 
 ## 📂 Projects Overview
 
-### 01\_Breast\_Cancer\_Binary\_Classification
-
-* **Task:** Binary classification on a medical dataset
-* **Tech:** TensorFlow/Keras, scikit-learn
-
-### 02\_Recommendation\_Systems
-
-* **Task:** Collaborative filtering & content-based recommenders
-* **Tech:** Python, Pandas, Surprise
-
-### 03\_IMDB\_Movie\_Review\_Sentiment\_Analysis
-
-* **Task:** Sentiment classification on IMDB with BiLSTM
-* **Tech:** TensorFlow/Keras
-
-### 04\_IMDB\_Sentiment\_Analysis\_Advanced
-
-* **Task:** Full pipeline: tokenization, embeddings, sequence models
-* **Extra:** ROC-AUC, PR curves, calibration curves
-* **Tech:** TensorFlow/Keras, scikit-learn, matplotlib
-
-### 05\_News\_Summarization
-
-* **Task:** Abstractive summarization with BART
-* **Extra:** evaluation & visualization
-* **Tech:** Hugging Face Transformers, PyTorch
-
-### 06\_Intent\_Classification
-
-* **Task:** Intent classification on BANKING77
-* **Baselines:** Logistic Regression, SVM
-* **Transformers:** DistilBERT, XLM-R
-* **Tech:** scikit-learn, Hugging Face
-
-### 07\_Text\_Classification
-
-* **Task:** Classical ML & DL experiments for text classification
-* **Tech:** scikit-learn, TensorFlow/PyTorch (varies)
-
-### 08\_BART\_Text\_Classification
-
-* **Task:** Fine-tuning BART for text classification
-* **Output:** reports & metrics
-* **Tech:** Hugging Face Transformers, PyTorch
-
-### 09\_COVID19\_Smoking\_MetaAnalysis
-
-* **Task:** Statistical analysis of COVID-19 & smoking research
-* **Tech:** Python, stats libraries
+| No | Project | Task | Tech |
+|----|---------|------|------|
+| 01 | Breast_Cancer_Binary_Classification | Binary classification on a medical dataset | TensorFlow/Keras, scikit-learn |
+| 02 | Recommendation_Systems | Collaborative filtering & content-based recommenders | Python, Pandas, Surprise |
+| 03 | IMDB_Movie_Review_Sentiment_Analysis | Sentiment classification on IMDB with BiLSTM | TensorFlow/Keras |
+| 04 | IMDB_Sentiment_Analysis_Advanced | Full pipeline: tokenization, embeddings, sequence models<br>+ ROC-AUC, PR curves, calibration curves | TensorFlow/Keras, scikit-learn, matplotlib |
+| 05 | News_Summarization | Abstractive summarization with BART<br>+ evaluation & visualization | Hugging Face Transformers, PyTorch |
+| 06 | Intent_Classification | Intent classification on BANKING77<br>Baselines: Logistic Regression, SVM<br>Transformers: DistilBERT, XLM-R | scikit-learn, Hugging Face |
+| 07 | Text_Classification | Classical ML & DL experiments for text classification | scikit-learn, TensorFlow/PyTorch (varies) |
+| 08 | BART_Text_Classification | Fine-tuning BART for text classification<br>+ reports & metrics | Hugging Face Transformers, PyTorch |
+| 09 | COVID19_Smoking_MetaAnalysis | Statistical analysis of COVID-19 & smoking research | Python, stats libraries |
 
 ---
 
-### 10\_Decoding
+<details>
+<summary><b>10_Decoding</b> (click to expand)</summary>
 
-* **Task:** Beginner-friendly decoding strategies (greedy, speculative, Medusa)
-* **Subfolders:**
+- **Task:** Beginner-friendly decoding strategies (Greedy, Sampling, Speculative, Medusa)  
+- **Subfolders:**  
+  - `00_decoding_basics`: basic greedy & sampling decoding  
+  - `01_speculative_decoding`: drafter-verifier setup, prefix-accept, n-gram variants  
+  - `02_medusa`: Medusa experiments (ultra-min, tiny, lite, prefix-accept)  
+- **Tech:** Hugging Face Transformers, PyTorch  
 
-  * `00_decoding_basics`
-  * `01_speculative_decoding`
-  * `02_medusa`
-* **Tech:** Hugging Face Transformers, PyTorch
+</details>
 
-### 11\_ReAct\_vs\_Non\_ReAct\_on\_Iris
+<details>
+<summary><b>11_ReAct_vs_Non_ReAct_on_Iris</b> (click to expand)</summary>
 
-* **Task:** ReAct (Reasoning + Acting) framework vs baseline on Iris
-* **Tech:** Python, scikit-learn
+- **Task:** ReAct (Reasoning + Acting) framework vs baseline on Iris dataset  
+- **Goal:** Compare reasoning-augmented acting vs plain baseline classification  
+- **Files:**  
+  - `execution/exp00_ReAct_vs_Non_ReAct_on_Iris.ipynb`  
+  - `docs/ReAct_Reasoning_Acting_in_LLM.pdf`  
+  - `docs/ReAct_VS_Non_ReAct_on_iris_v1.md`  
+- **Tech:** Python, scikit-learn  
 
-### 12\_CLIP\_Multimodal\_Demo
+</details>
 
-* **Task:** Image-text alignment demo with CLIP
-* **Tech:** Hugging Face, OpenAI CLIP
+<details>
+<summary><b>12_CLIP_Multimodal_Demo</b> (click to expand)</summary>
 
-### 13\_IntentRouter
+- **Task:** Text ↔ Image alignment demo (CLIP)  
+- **Goal:** Explore multimodal understanding: text-based image retrieval, image captioning  
+- **Tech:** Hugging Face Transformers, OpenAI CLIP  
 
-* **Task:** Rules-based intent router with minimal self-improvement
-* **Flow:** detect → fallback → call handler
-* **Self-improvement:** logs gold labels, suggests new keywords
-* **File:** `exp00_fc_self_improve_min.md`
-* **Tech:** Pure Python (no ML libs)
+</details>
 
-### 14\_RAPTOR
+<details>
+<summary><b>13_IntentRouter</b> (click to expand)</summary>
 
-* **Task:** Tree-based retrieval with hierarchical summaries
-* **Day 1:** `01_day1_tree_build.ipynb`, `01_day1_tree_build_EN.ipynb`
-* **Day 2:** `02_day2_retrieval.ipynb`, `02_day2_retrieval_EN.ipynb`
-* **Day 3:** `03_day3_raptor_search/`
+- **Task:** Rules-based intent router with minimal self-improvement  
+- **Flow:** detect → fallback → call handler  
+- **Self-improvement:** logs gold labels, suggests new keywords  
+- **File:** `exp00_fc_self_improve_min.md`  
+- **Tech:** Pure Python (no ML libs)  
 
-  * Ultra-Lite: `raptor_search_ultralite_keyword.md`
-  * Lite: `raptor_search_lite_tfidf.md`
-  * Full Pipeline: `raptor_search_full.md`
-* **Tech:** Python, scikit-learn (TF-IDF) + pure-Python baselines
+</details>
+
+<details>
+<summary><b>14_RAPTOR</b> (click to expand)</summary>
+
+- **Task:** Tree-based retrieval with hierarchical summaries  
+- **Pipeline:**  
+  - **Day 1 — Tree Build:** `01_day1_tree_build.ipynb`, `01_day1_tree_build_EN.ipynb`  
+  - **Day 2 — Retrieval:** `02_day2_retrieval.ipynb`, `02_day2_retrieval_EN.ipynb`  
+  - **Day 3 — RAPTOR Search (Beginner-Friendly):** `03_day3_raptor_search/`  
+    - Ultra-Lite: `raptor_search_ultralite_keyword.md`  
+    - Lite: `raptor_search_lite_tfidf.md`  
+    - Full Pipeline: `raptor_search_full.md`  
+- **Tech:** Python, scikit-learn (TF-IDF) + pure-Python baselines  
+
+</details>
 
 ---
 
 ## ✍️ Contributions
-
 Feedback and contributions are always welcome!
-
----
-
-👉 이렇게 바꾸면 훨씬 “GitHub 포트폴리오” 느낌이 나고, 스크롤할 때도 한눈에 잘 들어와요.
-
-원할까, 내가 이 포맷 그대로 `README.md` 완성본 마크다운 파일 만들어서 바로 커밋할 수 있게 해드려?
