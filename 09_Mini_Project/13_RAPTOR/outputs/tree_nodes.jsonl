@@ -1,0 +1,6 @@
+{"node_id": "L1_N0001", "level": 1, "children": ["C0001", "C0002"], "summary": "This is the story of the Dursleys and the Potters."}
+{"node_id": "L1_N0002", "level": 1, "children": ["C0003", "C0004"], "summary": "Harry Potter and the Philosopher’s Stone by JK Rowling"}
+{"node_id": "L1_N0003", "level": 1, "children": ["C0005"], "summary": "Dudley and Petunia Dursley had a strange day."}
+{"node_id": "L2_N0001", "level": 2, "children": ["L1_N0001", "L1_N0002"], "summary": "Harry Potter and the Philosopher’s Stone by JK Rowling"}
+{"node_id": "L2_N0002", "level": 2, "children": ["L1_N0003"], "summary": "All images are copyrighted."}
+{"node_id": "L3_N0001", "level": 3, "children": ["L2_N0001", "L2_N0002"], "summary": "All images are copyrighted."}
