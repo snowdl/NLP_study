@@ -1,131 +1,116 @@
-🧩 Mini Projects in NLP_Study
+---
 
-A collection of machine learning & NLP mini projects.
-Each project demonstrates end-to-end experimentation: data preprocessing, model training, evaluation, and documentation.
+# 🧩 Mini Projects in NLP\_Study
+
+A collection of **machine learning & NLP mini projects**.
+Each project demonstrates **end-to-end experimentation**: preprocessing, training, evaluation, and documentation.
 
 👉 Navigate into each folder for details.
 
-📂 Projects Overview
-01_Breast_Cancer_Binary_Classification
+---
 
-Task: Binary classification on a medical dataset
+## 📂 Projects Overview
 
-Tech: TensorFlow/Keras, scikit-learn
+### 01\_Breast\_Cancer\_Binary\_Classification
 
-02_Recommendation_Systems
+* **Task:** Binary classification on a medical dataset
+* **Tech:** TensorFlow/Keras, scikit-learn
 
-Task: Collaborative filtering & content-based recommenders
+### 02\_Recommendation\_Systems
 
-Tech: Python, Pandas, Surprise
+* **Task:** Collaborative filtering & content-based recommenders
+* **Tech:** Python, Pandas, Surprise
 
-03_IMDB_Movie_Review_Sentiment_Analysis
+### 03\_IMDB\_Movie\_Review\_Sentiment\_Analysis
 
-Task: Sentiment classification on IMDB with BiLSTM
+* **Task:** Sentiment classification on IMDB with BiLSTM
+* **Tech:** TensorFlow/Keras
 
-Tech: TensorFlow/Keras
+### 04\_IMDB\_Sentiment\_Analysis\_Advanced
 
-04_IMDB_Sentiment_Analysis_Advanced
+* **Task:** Full pipeline: tokenization, embeddings, sequence models
+* **Extra:** ROC-AUC, PR curves, calibration curves
+* **Tech:** TensorFlow/Keras, scikit-learn, matplotlib
 
-Task: Full pipeline: tokenization, embeddings, sequence models
+### 05\_News\_Summarization
 
-Extra: ROC-AUC, PR curves, calibration curves
+* **Task:** Abstractive summarization with BART
+* **Extra:** evaluation & visualization
+* **Tech:** Hugging Face Transformers, PyTorch
 
-Tech: TensorFlow/Keras, scikit-learn, matplotlib
+### 06\_Intent\_Classification
 
-05_News_Summarization
+* **Task:** Intent classification on BANKING77
+* **Baselines:** Logistic Regression, SVM
+* **Transformers:** DistilBERT, XLM-R
+* **Tech:** scikit-learn, Hugging Face
 
-Task: Abstractive summarization with BART
+### 07\_Text\_Classification
 
-Extra: evaluation & visualization
+* **Task:** Classical ML & DL experiments for text classification
+* **Tech:** scikit-learn, TensorFlow/PyTorch (varies)
 
-Tech: Hugging Face Transformers, PyTorch
+### 08\_BART\_Text\_Classification
 
-06_Intent_Classification
+* **Task:** Fine-tuning BART for text classification
+* **Output:** reports & metrics
+* **Tech:** Hugging Face Transformers, PyTorch
 
-Task: Intent classification on BANKING77
+### 09\_COVID19\_Smoking\_MetaAnalysis
 
-Baselines: Logistic Regression, SVM
+* **Task:** Statistical analysis of COVID-19 & smoking research
+* **Tech:** Python, stats libraries
 
-Transformers: DistilBERT, XLM-R
+---
 
-Tech: scikit-learn, Hugging Face
+### 10\_Decoding
 
-07_Text_Classification
+* **Task:** Beginner-friendly decoding strategies (greedy, speculative, Medusa)
+* **Subfolders:**
 
-Task: Classical ML & DL experiments for text classification
+  * `00_decoding_basics`
+  * `01_speculative_decoding`
+  * `02_medusa`
+* **Tech:** Hugging Face Transformers, PyTorch
 
-Tech: scikit-learn, TensorFlow/PyTorch (varies)
+### 11\_ReAct\_vs\_Non\_ReAct\_on\_Iris
 
-08_BART_Text_Classification
+* **Task:** ReAct (Reasoning + Acting) framework vs baseline on Iris
+* **Tech:** Python, scikit-learn
 
-Task: Fine-tuning BART for text classification
+### 12\_CLIP\_Multimodal\_Demo
 
-Output: reports & metrics
+* **Task:** Image-text alignment demo with CLIP
+* **Tech:** Hugging Face, OpenAI CLIP
 
-Tech: Hugging Face Transformers, PyTorch
+### 13\_IntentRouter
 
-09_COVID19_Smoking_MetaAnalysis
+* **Task:** Rules-based intent router with minimal self-improvement
+* **Flow:** detect → fallback → call handler
+* **Self-improvement:** logs gold labels, suggests new keywords
+* **File:** `exp00_fc_self_improve_min.md`
+* **Tech:** Pure Python (no ML libs)
 
-Task: Statistical analysis of COVID-19 & smoking research
+### 14\_RAPTOR
 
-Tech: Python, stats libraries
+* **Task:** Tree-based retrieval with hierarchical summaries
+* **Day 1:** `01_day1_tree_build.ipynb`, `01_day1_tree_build_EN.ipynb`
+* **Day 2:** `02_day2_retrieval.ipynb`, `02_day2_retrieval_EN.ipynb`
+* **Day 3:** `03_day3_raptor_search/`
 
-10_Decoding
+  * Ultra-Lite: `raptor_search_ultralite_keyword.md`
+  * Lite: `raptor_search_lite_tfidf.md`
+  * Full Pipeline: `raptor_search_full.md`
+* **Tech:** Python, scikit-learn (TF-IDF) + pure-Python baselines
 
-Task: Beginner-friendly decoding strategies (greedy, speculative, Medusa)
+---
 
-Subfolders:
-
-00_decoding_basics
-
-01_speculative_decoding
-
-02_medusa
-
-Tech: Hugging Face Transformers, PyTorch
-
-11_ReAct_vs_Non_ReAct_on_Iris
-
-Task: ReAct (Reasoning + Acting) framework vs baseline on Iris
-
-Tech: Python, scikit-learn
-
-12_CLIP_Multimodal_Demo
-
-Task: Image-text alignment demo with CLIP
-
-Tech: Hugging Face, OpenAI CLIP
-
-13_IntentRouter
-
-Task: Rules-based intent router with minimal self-improvement
-
-Flow: detect → fallback → call handler
-
-Self-improvement: logs gold labels, suggests new keywords
-
-File: exp00_fc_self_improve_min.md
-
-Tech: Pure Python (no ML libs)
-
-14_RAPTOR
-
-Task: Tree-based retrieval with hierarchical summaries
-
-Day 1: 01_day1_tree_build.ipynb, 01_day1_tree_build_EN.ipynb
-
-Day 2: 02_day2_retrieval.ipynb, 02_day2_retrieval_EN.ipynb
-
-Day 3: 03_day3_raptor_search/
-
-Ultra-Lite: raptor_search_ultralite_keyword.md
-
-Lite: raptor_search_lite_tfidf.md
-
-Full Pipeline: raptor_search_full.md
-
-Tech: Python, scikit-learn (TF-IDF) + pure-Python baselines
-
-✍️ Contributions
+## ✍️ Contributions
 
 Feedback and contributions are always welcome!
+
+---
+
+👉 이렇게 바꾸면 훨씬 “GitHub 포트폴리오” 느낌이 나고, 스크롤할 때도 한눈에 잘 들어와요.
+
+원할까, 내가 이 포맷 그대로 `README.md` 완성본 마크다운 파일 만들어서 바로 커밋할 수 있게 해드려?
