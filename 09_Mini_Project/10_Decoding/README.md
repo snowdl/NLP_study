@@ -1,7 +1,7 @@
 # Decoding 🧩
 
 This directory contains experiments and study notes on **text generation (decoding) methods**.  
-It is organized from basics → Speculative Decoding → Medusa.
+It is organized from **basics → speculative decoding variants → Medusa**.
 
 ---
 
@@ -10,18 +10,33 @@ It is organized from basics → Speculative Decoding → Medusa.
 - **00_decoding_basics/**  
   Fundamental decoding strategies such as Greedy, Top-k, Top-p, and Beam Search.
 
-- **01_speculative_decoding/**  
+- **01_Basics/**  
+  Minimal / introductory speculative decoding examples (EN & KR versions, simple demos).
 
-  - [01_minimal_speculative.md](01_speculative_decoding/01_minimal_speculative.md)  
-  - [speculative_decoding_ngram_prefix_accept.md](01_speculative_decoding/speculative_decoding_ngram_prefix_accept.md)  
-  - [speculative_decoding_step_by_step.md](01_speculative_decoding/speculative_decoding_step_by_step.md)
+- **02_Baseline_vs_Prefix/**  
+  Comparisons between baseline decoding and prefix-accept speculative decoding.
 
-- **02_medusa/**  
+- **02_Medusa_Core/**  
+  Pure Medusa demos and execution notebooks (Greedy vs Medusa, ultra-min, tiny versions, docs).
 
-  - [medusa_lite_clean.ipynb](02_medusa/medusa_lite_clean.ipynb)
+- **03_Speculative_Medusa/**  
+  Experiments comparing Medusa with Greedy decoding **within the speculative decoding framework**.
+
+- **04_Ngram/**  
+  N-gram–based prefix-accept prototypes.
+
+- **05_Soft_Guarded/**  
+  Soft and guarded speculative decoding experiments.
+
+- **99_Tutorials_Docs/**  
+  Tutorials and walkthroughs (step-by-step guides, English/Korean versions, consolidated docs).
 
 ---
 
 ## 📌 Notes
-- **Speculative Decoding** → a smaller model drafts multiple tokens, while a larger model verifies them, improving generation speed.  
-- **Medusa** → eliminates the need for a separate small model by attaching auxiliary heads inside the LLM to achieve similar acceleration.
+
+- **Speculative Decoding** → A smaller “drafter” model proposes multiple tokens, while a larger “verifier” model checks and accepts as much of the draft as possible. This improves generation speed without much quality loss.  
+
+- **Medusa** → Removes the need for a separate drafter model by adding lightweight “Medusa heads” inside the LLM itself, achieving speculative-style acceleration.  
+
+- **Speculative vs Medusa** → In this repo, you can find both pure Medusa experiments (`02_Medusa_Core`) and speculative decoding experiments that incorporate Medusa (`03_Speculative_Medusa`).
