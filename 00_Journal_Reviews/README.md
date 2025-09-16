@@ -103,7 +103,6 @@ Highlights trade-offs in efficiency, accuracy, and safety when applying LLMs at 
 
 
 ---
-
 ### 12. [RAPTOR.pdf](./12_RAPTOR.pdf)  
 **Title:** RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval  
 - Proposes a tree-structured summarization and clustering method for retrieval-augmented LMs.  
@@ -111,6 +110,15 @@ Highlights trade-offs in efficiency, accuracy, and safety when applying LLMs at 
 - Improves efficiency and accuracy of RAG systems, especially on long-context tasks.  
 - Achieved +20% accuracy gain on QuALITY benchmark with GPT-4.  
 - **[Paper link](https://arxiv.org/abs/2401.18059)**
+
+
+---
+### 13. [Blockwise_Parallel_Decoding.pdf](./Blockwise_Parallel_Decoding.pdf)  
+**Title:** Blockwise Parallel Decoding for Deep Autoregressive Models  
+- Proposes a decoding method that generates multiple tokens in parallel blocks instead of strictly sequentially.  
+- Improves inference speed for large autoregressive language models while maintaining accuracy.  
+- Demonstrates applicability to machine translation and text generation benchmarks.  
+- **[Paper link](https://arxiv.org/abs/2305.15261)**
 
 
 
