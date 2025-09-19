@@ -7,9 +7,6 @@ It is organized from **basics → speculative decoding variants → Medusa**.
 
 ## 📂 Folder Structure
 
-- **00_decoding_basics/**  
-  Fundamental decoding strategies such as Greedy, Top-k, Top-p, and Beam Search.
-
 - **01_Basics/**  
   Minimal / introductory speculative decoding examples (EN & KR versions, simple demos).
 
