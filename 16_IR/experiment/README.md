@@ -7,7 +7,32 @@ core IR concepts.
 
 ---
 
-## Ad-hoc Retrieval Experiment (Inverted Index + TF-IDF / BM25)  🔥 *Latest*
+## Inverted-Index kNN with Candidate Pruning Experiment 🔥 *Latest*
+- Synthetic corpus generation with controllable vocabulary overlap (`p_common`)
+- TF-IDF vectorization with L2 normalization
+- Brute-force kNN as a correctness baseline
+- Inverted-index–based candidate generation for kNN
+- Candidate pruning using query term overlap
+- Runtime and candidate set size comparison
+- Sweep analysis over different overlap ratios
+
+Goals:
+- Demonstrate how inverted indexes can accelerate kNN-style retrieval
+- Analyze the relationship between vocabulary overlap and candidate pruning effectiveness
+- Verify that candidate pruning preserves top-k neighbors and predictions
+- Contrast brute-force similarity computation with indexed retrieval
+
+Key Observations:
+- Low overlap leads to very small candidate sets and significant speedups
+- As overlap increases, candidate sets approach the full corpus
+- Prediction consistency remains high across all settings
+
+Notebook:
+- `20260114_brute_knn_inverted_index_candidate_pruning.ipynb`
+
+---
+
+## Ad-hoc Retrieval Experiment (Inverted Index + TF-IDF / BM25)
 - Construction of an inverted index with document frequency and document length
 - Candidate generation using postings list union (OR)
 - Optional candidate reduction using rare query terms
@@ -65,3 +90,4 @@ These experiments collectively explore:
 - The trade-off between retrieval accuracy and computational cost
 - Practical implementations of classic IR techniques taught in coursework
 - Structural foundations for scalable search systems
+- The role of inverted indexes in accelerating kNN-style similarity search
